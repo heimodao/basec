@@ -10,8 +10,8 @@ unsigned int DJBHash(char *str);
 
 
 int main () {
-	char str[] = "zengwei951013";
-	char str2[] = "曾巍951013";
+	char str[] = "wenruo";
+	char str2[] = "zw@linkzw.com";
 	printf("BKDR:%s(%d)\t%s(%d)\n",str,BKDRHash(str),str2,BKDRHash(str2));
 	printf("SDBM:%s(%d)\t%s(%d)\n",str,SDBMHash(str),str2,SDBMHash(str2));
 	printf("RS:%s(%d)\t%s(%d)\n",str,SDBMHash(str),str2,SDBMHash(str2));
