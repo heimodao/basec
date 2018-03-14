@@ -3,6 +3,7 @@
 usage(){
 	echo "usage: sh chown.sh linkzw|zw|root"
 }
+# chown linkzw:linkzw /home/linkzw/
 
 if [ $# -lt 1 ];
 then
