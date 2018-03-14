@@ -30,7 +30,7 @@ print(str)
 
 print("--------开始写入--------")
 local outputfile = io.output("menu.md")
-io.write(str)
+io.write(str .. "\n\n")
 io.flush()
 io.close()
 --[[

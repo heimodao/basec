@@ -1,3 +1,9 @@
+## [wenruo95.gtihub.com](https://github.com/wenruo95/wenruo95.gtihub.com "wenruo95.gtihub.com")
+
+## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
+
+[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
+
 ## [markdown](https://github.com/wenruo95/markdown "markdown")
 
 [Java输入](https://github.com/wenruo95/markdown/blob/master/2015-05-19-java-input.md "Java输入")
@@ -106,15 +112,7 @@
 
 [排序](https://github.com/wenruo95/algorithmn/lua/blob/master/sort.lua "排序")
 
-## [algorithmn:c++](https://github.com/wenruo95/algorithmn/c++ "algorithmn/c++")
-
-[排序](https://github.com/wenruo95/algorithmn/c++/blob/master/sort.cpp "排序")
-
-## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
-
-[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
-
-## [wenruo95.gtihub.com](https://github.com/wenruo95/wenruo95.gtihub.com "wenruo95.gtihub.com")
+## [algorithmn:c:improve](https://github.com/wenruo95/algorithmn/c/improve "algorithmn/c/improve")
 
 ## [algorithmn:c](https://github.com/wenruo95/algorithmn/c "algorithmn/c")
 
@@ -150,4 +148,7 @@
 
 [svn复制到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git.sh "svn复制到git")
 
-## [algorithmn:c:improve](https://github.com/wenruo95/algorithmn/c/improve "algorithmn/c/improve")
+## [algorithmn:c++](https://github.com/wenruo95/algorithmn/c++ "algorithmn/c++")
+
+[排序](https://github.com/wenruo95/algorithmn/c++/blob/master/sort.cpp "排序")
+
