@@ -33,5 +33,11 @@ local outputfile = io.output("menu.md")
 io.write(str)
 io.flush()
 io.close()
+--[[
+local outputfile = io.open("../README.md","a")
+io.output(outputfile)
+io.write(str)
+io.close(outputfile)
+]]
 print("--------写入完成--------")
 
