@@ -2,159 +2,246 @@
 
 > author:zw
 > date  :2018-02-11
+ 
+> 学习方法、需要学习算法资料来源于：https://github.com/nonstriater/Learn-Algorithms
+> [博客及代码目录](menu.md) 
+
+## 学习方法
+ 
+* 把所有经典算法写一遍  
+* 看算法有关源码   
+* 加入算法学习社区，相互鼓励学习   
+* 看经典书籍  
+* 刷题   
+
+
+## 基本数据结构和算法
+
+这些算法全部自己敲一遍：
+
+### 链表
+
+* 链表
+* 双向链表
+ 
+### 哈希表/散列表 (Hash Table)
+
+* 散列函数
+* 碰撞解决
+
+### 字符串算法  
+
+* 排序
+* 查找
+    * BF算法  
+    * KMP算法  
+    * BM算法  
+* 正则表达式
+* 数据压缩
+
+
+### 二叉树
+
+* 二叉树    
+* 二叉查找树   
+* 伸展树(splay tree 分裂树)   
+* 平衡二叉树AVL    
+* 红黑树  
+* B树,B+,B*  
+* R树  
+* Trie树(前缀树)  
+* 后缀树  
+* 最优二叉树(赫夫曼树) 
+* 二叉堆 （大根堆，小根堆）   
+* 二项树    
+* 二项堆  
+* 斐波那契堆(Fibonacci Heap)   
+
+
+### 图的算法
+
+* 图的存储结构和基本操作（建立，遍历，删除节点，添加节点）   
+* 最小生成树  
+* 拓扑排序  
+* 关键路径  
+* 最短路径: Floyd,Dijkstra,bellman-ford,spfa  
+  
+  
+  
+### 排序算法
+
+**交换排序算法**
+
+* 冒泡排序
+* 插入排序    
+* 选择排序    
+* 希尔排序
+* 快排   
+* 归并排序  
+* 堆排序
+
+**线性排序算法**
+    
+* 桶排序 
+  
+  
+### 查找算法  
+
+* 顺序表查找：顺序查找  
+* 有序表查找：二分查找  
+* 分块查找： 块内无序，块之间有序；可以先二分查找定位到块，然后再到`块`中顺序查找  
+* 动态查找:  二叉排序树，AVL树，B- ，B+    （这里之所以叫 `动态查找表`，是因为表结构是查找的过程中动态生成的）
+* 哈希表：  O(1)     
+
+
+### 15个经典基础算法
+
+* Hash  
+* 快速排序 
+* 快递选择SELECT 
+* BFS/DFS （广度/深度优先遍历）    
+* 红黑树 （一种自平衡的`二叉查找树`）  
+* KMP    字符串匹配算法
+* DP (动态规划 dynamic programming)   
+* A*寻路算法： 求解最短路径 
+* Dijkstra：最短路径算法 （八卦下：Dijkstra是荷兰的计算机科学家,提出”信号量和PV原语“,"解决哲学家就餐问题",”死锁“也是它提出来的） 
+* 遗传算法  
+* 启发式搜索   
+* 图像特征提取之SIFT算法  
+* 傅立叶变换  
+* SPFA(shortest path faster algorithm)  单元最短路径算法
+
+
+## 海量数据处理
+
+* Hash映射/分而治之
+* Bitmap
+* Bloom filter(布隆过滤器)
+* Trie树
+* 数据库索引
+* 倒排索引(Inverted Index)
+* 双层桶划分
+* 外排序
+* simhash算法
+* 分布处理之Mapreduce
 
 
-## [wenruo95.gtihub.com](https://github.com/wenruo95/wenruo95.gtihub.com "wenruo95.gtihub.com")
+## 算法设计思想
+ 
+* 迭代法  
+* 穷举搜索法  
+* 递推法  
+* 动态规划  
+* 贪心算法  
+* 回溯  
+* 分治算法  
+
+
+## 算法问题选编
 
-## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
+这是一个算法题目合集，题目是我从网络和书籍之中整理而来，部分题目已经做了思路整理。问题分类包括：
 
-[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
+* 字符串
+* 堆和栈
+* 链表
+* 数值问题
+* 数组和数列问题
+* 矩阵问题
+* 二叉树
+* 图
+* 海量数据处理
+* 智力思维训练
+* 系统设计
 
-## [markdown](https://github.com/wenruo95/markdown "markdown")
+还有部分来自算法网站和书籍：
 
-[Java输入](https://github.com/wenruo95/markdown/blob/master/2015-05-19-java-input.md "Java输入")
+* 九度OJ
+* leetcode
+* 剑指offer
 
-[Maven常见错误](https://github.com/wenruo95/markdown/blob/master/2015-05-30-maven-error-1.md "Maven常见错误")
 
-[svn服务器导入](https://github.com/wenruo95/markdown/blob/master/2015-07-07-svn-import.md "svn服务器导入")
+## 开源项目中的算法
 
-[svn服务器权限问题](https://github.com/wenruo95/markdown/blob/master/2015-07-07-svn-server-ban.md "svn服务器权限问题")
+* YYCache
+* cocos2d-objc
+* ...
 
-[java、jsp、js区别](https://github.com/wenruo95/markdown/blob/master/2015-07-08-java-js-jsp-dis.md "java、jsp、js区别")
 
-[tomcat移除端口](https://github.com/wenruo95/markdown/blob/master/2015-07-14-tomcat-remove-port-name.md "tomcat移除端口")
+## 推荐阅读
 
-[跳台阶](https://github.com/wenruo95/markdown/blob/master/2015-07-30-jump-taijie.md "跳台阶")
+### 刷题必备  
 
-[myeclipse svn](https://github.com/wenruo95/markdown/blob/master/2015-07-30-myeclipse-svn.md "myeclipse svn")
+《剑指offer》  
+《编程之美》  
+《编程之法:面试和算法心得》      
+《算法谜题》 都是思维题 
 
-[tomcat密码](https://github.com/wenruo95/markdown/blob/master/2015-07-30-tomcat-mag-pwd.md "tomcat密码")
+### 基础
 
-[mysql常见错误](https://github.com/wenruo95/markdown/blob/master/2015-09-05-mysql-error.md "mysql常见错误")
+《编程珠玑》Programming Pearls   
+《编程珠玑(续)》   
+《数据结构与算法分析》   
+《Algorithms》 这本近千页的书只有6章,其中四章分别是排序，查找，图，字符串，足见介绍细致     
 
-[ubuntu grub引导](https://github.com/wenruo95/markdown/blob/master/2015-09-17-ubuntu-grub-ydao.md "ubuntu grub引导")
+### 算法设计 
 
-[ubuntu ssh登录](https://github.com/wenruo95/markdown/blob/master/2015-09-19-ubuntu-ssh-loginerror.md "ubuntu ssh登录")
+《算法设计与分析基础》    
+《算法引论》 告诉你如何创造算法   断货        
+《Algorithm Design Manual》算法设计手册 红皮书  
 
-[ubuntu远程windows](https://github.com/wenruo95/markdown/blob/master/2015-12-30-ubuntu-line-to-windows.md "ubuntu远程windows")
+《算法导论》 是一本对算法介绍比较全面的经典书籍   
+     
+《Algorithms on Strings,Trees and Sequences》    
+《Advanced Data Structures》 各种诡异高级的数据结构和算法 如元胞自动机、斐波纳契堆、线段树  600块    
+  
+ 
+### 延伸阅读 
+   
+《深入理解计算机系统》    
+《TCP/IP详解三卷》    
+《UNIX网络编程二卷》  
+《UNIX环境高级编程：第2版》  
+    
+     
+《The practice of programming》   Brian Kernighan和Rob Pike    
+《writing efficient programs》  优化   
+《The science of programming》 证明代码段的正确性   800块一本   
 
-[ubuntu常用命令行1](https://github.com/wenruo95/markdown/blob/master/2016-01-05-ubuntu-command-lines.md "ubuntu常用命令行1")
 
-[书签](https://github.com/wenruo95/markdown/blob/master/2016-01-11-bookmark.md "书签")
+## 参考链接和学习网站
 
-[Vim命令行](https://github.com/wenruo95/markdown/blob/master/2016-01-11-vim-lines.md "Vim命令行")
+### [July 博客](http://blog.csdn.net/v_july_v) 
 
-[vim插件](https://github.com/wenruo95/markdown/blob/master/2016-01-11-vim-plugins.md "vim插件")
+《数学建模十大经典算法》    
+《数据挖掘领域十大经典算法》    
+《十道海量数据处理面试题》      
+《数字图像处理领域的二十四个经典算法》    
+《精选微软等公司经典的算法面试100题》 
 
-[ubuntu软件](https://github.com/wenruo95/markdown/blob/master/2017-05-20-ubuntu-software.md "ubuntu软件")
 
-[vim配置](https://github.com/wenruo95/markdown/blob/master/2017-09-27-vim-vimrc-config.md "vim配置")
+[The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-By-July)   
+[微软面试100题](http://blog.csdn.net/column/details/ms100.html)   
+[程序员编程艺术](http://blog.csdn.net/v_JULY_v/article/details/6460494)   
 
-[Lua面向对象](https://github.com/wenruo95/markdown/blob/master/2018-01-02-LuaOO.md "Lua面向对象")
 
-[博客分类](https://github.com/wenruo95/markdown/blob/master/2018-01-02-blog-category.md "博客分类")
+### 基本算法演示 
 
-[计算机网络](https://github.com/wenruo95/markdown/blob/master/2018-01-03-computer-network.md "计算机网络")
+http://sjjg.js.zwu.edu.cn/SFXX/sf1/sfys.html  
+http://www.cs.usfca.edu/~galles/visualization/Algorithms.html  
+  
+   
+### 编程网站
 
-[Lua load公式使用](https://github.com/wenruo95/markdown/blob/master/2018-01-05-Lua-Load-公式使用.md "Lua load公式使用")
+[leetcode](http://leetcode.com/)    
+[openjudge](http://openjudge.cn/)  开放在线程序评测平台，可以床架自己的OJ小组  
+[九度OJ](http://ac.jobdu.com/index.php)     
+  
+这有个[ACM训练方案](http://www.java3z.com/cwbwebhome/article/article19/res041.html)   
 
-[八皇后](https://github.com/wenruo95/markdown/blob/master/2018-01-15-eight-quene.md "八皇后")
+### 其它
 
-[ubuntu常用命令行2](https://github.com/wenruo95/markdown/blob/master/2018-01-25-ubuntu-line.md "ubuntu常用命令行2")
+[高级数据结构和算法](https://www.coursera.org/learn/gaoji-shuju-jiegou/)  北大教授张铭老师在coursera上的课程。完成这门课之时，你将掌握多维数组、广义表、Trie树、AVL树、伸展树等高级数据结构，并结合内排序、外排序、检索、索引有关的算法，高效地解决现实生活中一些比较复杂的应用问题。当然coursera上也还有很多其它算法方面的视频课程。
 
-[算法](https://github.com/wenruo95/markdown/blob/master/2018-01-29-algorithm.md "算法")
 
-[lua字符串](https://github.com/wenruo95/markdown/blob/master/2018-01-29-lua-string.md "lua字符串")
-
-[操作系统](https://github.com/wenruo95/markdown/blob/master/2018-01-29-operate-system.md "操作系统")
-
-[Unix编程](https://github.com/wenruo95/markdown/blob/master/2018-01-29-unix-programe.md "Unix编程")
-
-[Skynet学习研究](https://github.com/wenruo95/markdown/blob/master/2018-01-30-skynet-study.md "Skynet学习研究")
-
-[王阳明 知行合一](https://github.com/wenruo95/markdown/blob/master/2018-01-30-王阳明-知行合一.md "王阳明 知行合一")
-
-[Lua基础](https://github.com/wenruo95/markdown/blob/master/2018-01-31-LuaBase.md "Lua基础")
-
-[mysql索引](https://github.com/wenruo95/markdown/blob/master/2018-02-11-MySQL-Index.md "mysql索引")
-
-[随机数](https://github.com/wenruo95/markdown/blob/master/2018-02-12-randcode.md "随机数")
-
-[深度优先、广度优先](https://github.com/wenruo95/markdown/blob/master/2018-02-28-DFS-BFS.md "深度优先、广度优先")
-
-[树](https://github.com/wenruo95/markdown/blob/master/2018-02-28-tree.md "树")
-
-[人工智能](https://github.com/wenruo95/markdown/blob/master/2018-03-13-人工智能.md "人工智能")
-
-[redis数据库](https://github.com/wenruo95/markdown/blob/master/2018-03-14-redis.md "redis数据库")
-
-[README.md](https://github.com/wenruo95/markdown/blob/master/README.md "README.md")
-
-[关于我](https://github.com/wenruo95/markdown/blob/master/aboutme.md "关于我")
-
-[new1](https://github.com/wenruo95/markdown/blob/master/new1.md "new1")
-
-[new2](https://github.com/wenruo95/markdown/blob/master/new2.md "new2")
-
-## [algorithmn:python](https://github.com/wenruo95/algorithmn/python "algorithmn/python")
-
-[python测试](https://github.com/wenruo95/algorithmn/python/blob/master/helloworld.py "python测试")
-
-## [algorithmn:lua](https://github.com/wenruo95/algorithmn/lua "algorithmn/lua")
-
-[大整数相乘-分治](https://github.com/wenruo95/algorithmn/lua/blob/master/bigint_multipli.lua "大整数相乘-分治")
-
-[八皇后问题](https://github.com/wenruo95/algorithmn/lua/blob/master/eight_queen.lua "八皇后问题")
-
-[费布拉切数列](https://github.com/wenruo95/algorithmn/lua/blob/master/fibonacci.lua "费布拉切数列")
-
-[git文件名](https://github.com/wenruo95/algorithmn/lua/blob/master/filename.lua "git文件名")
-
-[将git文件转化为markdown超链接](https://github.com/wenruo95/algorithmn/lua/blob/master/giturl.lua "将git文件转化为markdown超链接")
-
-[markdown输出文件](https://github.com/wenruo95/algorithmn/lua/blob/master/menu.md "markdown输出文件")
-
-[简单随机数问题](https://github.com/wenruo95/algorithmn/lua/blob/master/randcode.lua "简单随机数问题")
-
-[排序](https://github.com/wenruo95/algorithmn/lua/blob/master/sort.lua "排序")
-
-## [algorithmn:c:improve](https://github.com/wenruo95/algorithmn/c/improve "algorithmn/c/improve")
-
-## [algorithmn:c](https://github.com/wenruo95/algorithmn/c "algorithmn/c")
-
-[2048](https://github.com/wenruo95/algorithmn/c/blob/master/2048.c  "2048")
-
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc "数组")
-
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc.c "数组")
-
-[Java输入](https://github.com/wenruo95/algorithmn/c/blob/master/c1_print.c "Java输入")
-
-[五子棋](https://github.com/wenruo95/algorithmn/c/blob/master/fivechess.c "五子棋")
-
-[猜数字](https://github.com/wenruo95/algorithmn/c/blob/master/guessNumber.c "猜数字")
-
-[哈希表](https://github.com/wenruo95/algorithmn/c/blob/master/hash.c "哈希表")
-
-[哈希表测试](https://github.com/wenruo95/algorithmn/c/blob/master/hashtest.c "哈希表测试")
-
-[Lua与c交互](https://github.com/wenruo95/algorithmn/c/blob/master/lua与C简单交互 "Lua与c交互")
-
-[main](https://github.com/wenruo95/algorithmn/c/blob/master/main.cpp "main")
-
-[测试](https://github.com/wenruo95/algorithmn/c/blob/master/test.c "测试")
-
-## [algorithmn:shell](https://github.com/wenruo95/algorithmn/shell "algorithmn/shell")
-
-[权限问题](https://github.com/wenruo95/algorithmn/shell/blob/master/chown.sh "权限问题")
-
-[git复制到svn](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-git-svn.sh "git复制到svn")
-
-[复制markdown到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git-markdown.sh "复制markdown到git")
-
-[svn复制到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git.sh "svn复制到git")
-
-## [algorithmn:c++](https://github.com/wenruo95/algorithmn/c++ "algorithmn/c++")
-
-[排序](https://github.com/wenruo95/algorithmn/c++/blob/master/sort.cpp "排序")
+[算法设计与分析 Design and Analysis of Algorithms](https://class.coursera.org/algorithms-001/lecture) 由北大教授Wanling Qu在coursera讲授的一门算法课程。首先介绍一些与算法有关的基础知识，然后阐述经典的算法设计思想和分析技术，主要涉及的算法设计技术是：分治策略、动态规划、贪心法、回溯与分支限界等。每个视频都配有相应的讲义（pdf文件）以便阅读和复习。
 

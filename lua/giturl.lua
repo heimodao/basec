@@ -7,7 +7,14 @@ local files = require("filename")
 local url = "https://github.com"
 local username = "wenruo95"
 local branch = "blob/master"
+local createtime = string.format("	createtime	: %s",os.date("%Y-%m-%d %H:%M:%S"))
+local desc = [[
+## 目录
 
+	author		: zw@linkzw.com
+	created by	: https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua
+	filename	: https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua
+]]
 
 local result = {}
 for repository_name,value in pairs(files) do
@@ -26,11 +33,12 @@ for repository_name,value in pairs(files) do
 	end
 end
 local str = table.concat(result,"\n\n")
-print(str)
+local content = string.format("%s\n\n%s\n\n%s\n\n",desc,createtime,str)
+print(content)
 
 print("--------开始写入--------")
-local outputfile = io.output("menu.md")
-io.write(str .. "\n\n")
+local outputfile = io.output("../menu.md")
+io.write(content)
 io.flush()
 io.close()
 --[[
