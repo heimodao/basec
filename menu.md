@@ -1,8 +1,35 @@
-## [wenruo95.gtihub.com](https://github.com/wenruo95/wenruo95.gtihub.com "wenruo95.gtihub.com")
+## 目录
 
-## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
+	author		: zw@linkzw.com
+	created by	: https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua
+	filename	: https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua
 
-[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
+
+	createtime	: 2018-03-15 10:50:10
+
+## [algorithmn:c](https://github.com/wenruo95/algorithmn/c "algorithmn/c")
+
+[2048](https://github.com/wenruo95/algorithmn/c/blob/master/2048.c  "2048")
+
+[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc "数组")
+
+[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc.c "数组")
+
+[Java输入](https://github.com/wenruo95/algorithmn/c/blob/master/c1_print.c "Java输入")
+
+[五子棋](https://github.com/wenruo95/algorithmn/c/blob/master/fivechess.c "五子棋")
+
+[猜数字](https://github.com/wenruo95/algorithmn/c/blob/master/guessNumber.c "猜数字")
+
+[哈希表](https://github.com/wenruo95/algorithmn/c/blob/master/hash.c "哈希表")
+
+[哈希表测试](https://github.com/wenruo95/algorithmn/c/blob/master/hashtest.c "哈希表测试")
+
+[Lua与c交互](https://github.com/wenruo95/algorithmn/c/blob/master/lua与C简单交互 "Lua与c交互")
+
+[main](https://github.com/wenruo95/algorithmn/c/blob/master/main.cpp "main")
+
+[测试](https://github.com/wenruo95/algorithmn/c/blob/master/test.c "测试")
 
 ## [markdown](https://github.com/wenruo95/markdown "markdown")
 
@@ -90,6 +117,22 @@
 
 [new2](https://github.com/wenruo95/markdown/blob/master/new2.md "new2")
 
+## [algorithmn:shell](https://github.com/wenruo95/algorithmn/shell "algorithmn/shell")
+
+[权限问题](https://github.com/wenruo95/algorithmn/shell/blob/master/chown.sh "权限问题")
+
+[git复制到svn](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-git-svn.sh "git复制到svn")
+
+[复制markdown到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git-markdown.sh "复制markdown到git")
+
+[svn复制到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git.sh "svn复制到git")
+
+## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
+
+[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
+
+## [wenruo95.gtihub.com](https://github.com/wenruo95/wenruo95.gtihub.com "wenruo95.gtihub.com")
+
 ## [algorithmn:python](https://github.com/wenruo95/algorithmn/python "algorithmn/python")
 
 [python测试](https://github.com/wenruo95/algorithmn/python/blob/master/helloworld.py "python测试")
@@ -113,40 +156,6 @@
 [排序](https://github.com/wenruo95/algorithmn/lua/blob/master/sort.lua "排序")
 
 ## [algorithmn:c:improve](https://github.com/wenruo95/algorithmn/c/improve "algorithmn/c/improve")
-
-## [algorithmn:c](https://github.com/wenruo95/algorithmn/c "algorithmn/c")
-
-[2048](https://github.com/wenruo95/algorithmn/c/blob/master/2048.c  "2048")
-
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc "数组")
-
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc.c "数组")
-
-[Java输入](https://github.com/wenruo95/algorithmn/c/blob/master/c1_print.c "Java输入")
-
-[五子棋](https://github.com/wenruo95/algorithmn/c/blob/master/fivechess.c "五子棋")
-
-[猜数字](https://github.com/wenruo95/algorithmn/c/blob/master/guessNumber.c "猜数字")
-
-[哈希表](https://github.com/wenruo95/algorithmn/c/blob/master/hash.c "哈希表")
-
-[哈希表测试](https://github.com/wenruo95/algorithmn/c/blob/master/hashtest.c "哈希表测试")
-
-[Lua与c交互](https://github.com/wenruo95/algorithmn/c/blob/master/lua与C简单交互 "Lua与c交互")
-
-[main](https://github.com/wenruo95/algorithmn/c/blob/master/main.cpp "main")
-
-[测试](https://github.com/wenruo95/algorithmn/c/blob/master/test.c "测试")
-
-## [algorithmn:shell](https://github.com/wenruo95/algorithmn/shell "algorithmn/shell")
-
-[权限问题](https://github.com/wenruo95/algorithmn/shell/blob/master/chown.sh "权限问题")
-
-[git复制到svn](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-git-svn.sh "git复制到svn")
-
-[复制markdown到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git-markdown.sh "复制markdown到git")
-
-[svn复制到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git.sh "svn复制到git")
 
 ## [algorithmn:c++](https://github.com/wenruo95/algorithmn/c++ "algorithmn/c++")
 
