@@ -6,7 +6,7 @@ local files = require("filename")
 
 local url = "https://github.com"
 local username = "wenruo95"
-local branch = "blob/master"
+local branch = "algorithm/blob/master"
 local createtime = string.format("	createtime	: %s",os.date("%Y-%m-%d %H:%M:%S"))
 local desc = [[
 ## 目录
@@ -27,7 +27,7 @@ for repository_name,value in pairs(files) do
 		return a.filename < b.filename
 	end)
 	for key,value in ipairs(value) do
-		local md_url = string.format("%s/%s/%s/%s/%s",url,username,repository_name,branch,value.filename)
+		local md_url = string.format("%s/%s/%s/%s/%s",url,username,branch,repository_name,value.filename)
 		local md_link = string.format("[%s](%s \"%s\")",value.title,md_url,value.title)
 		table.insert(result,md_link)
 	end

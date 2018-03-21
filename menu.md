@@ -5,177 +5,177 @@
 	filename	: https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua
 
 
-	createtime	: 2018-03-21 11:19:28
+	createtime	: 2018-03-21 11:28:48
 
-## [algorithmn:lua](https://github.com/wenruo95/algorithmn/lua "algorithmn/lua")
+## [java](https://github.com/wenruo95/java "java")
 
-[大整数相乘-分治](https://github.com/wenruo95/algorithmn/lua/blob/master/bigint_multipli.lua "大整数相乘-分治")
+[Java测试](https://github.com/wenruo95/algorithm/blob/master/java/HelloWorld.java "Java测试")
 
-[八皇后问题](https://github.com/wenruo95/algorithmn/lua/blob/master/eight_queen.lua "八皇后问题")
+## [lua](https://github.com/wenruo95/lua "lua")
 
-[费布拉切数列](https://github.com/wenruo95/algorithmn/lua/blob/master/fibonacci.lua "费布拉切数列")
+[大整数相乘-分治](https://github.com/wenruo95/algorithm/blob/master/lua/bigint_multipli.lua "大整数相乘-分治")
 
-[git文件名](https://github.com/wenruo95/algorithmn/lua/blob/master/filename.lua "git文件名")
+[八皇后问题](https://github.com/wenruo95/algorithm/blob/master/lua/eight_queen.lua "八皇后问题")
 
-[将git文件转化为markdown超链接](https://github.com/wenruo95/algorithmn/lua/blob/master/giturl.lua "将git文件转化为markdown超链接")
+[费布拉切数列](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua "费布拉切数列")
 
-[markdown输出文件](https://github.com/wenruo95/algorithmn/lua/blob/master/menu.md "markdown输出文件")
+[git文件名](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua "git文件名")
 
-[简单随机数问题](https://github.com/wenruo95/algorithmn/lua/blob/master/randcode.lua "简单随机数问题")
+[将git文件转化为markdown超链接](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua "将git文件转化为markdown超链接")
 
-[排序](https://github.com/wenruo95/algorithmn/lua/blob/master/sort.lua "排序")
+[markdown输出文件](https://github.com/wenruo95/algorithm/blob/master/lua/menu.md "markdown输出文件")
 
-## [algorithmn:markdown](https://github.com/wenruo95/algorithmn/markdown "algorithmn/markdown")
+[简单随机数问题](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua "简单随机数问题")
 
-[Java输入](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-05-19-java-input.md "Java输入")
+[排序](https://github.com/wenruo95/algorithm/blob/master/lua/sort.lua "排序")
 
-[Maven常见错误](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-05-30-maven-error-1.md "Maven常见错误")
+## [shell](https://github.com/wenruo95/shell "shell")
 
-[svn服务器导入](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-07-svn-import.md "svn服务器导入")
+[权限问题](https://github.com/wenruo95/algorithm/blob/master/shell/chown.sh "权限问题")
 
-[svn服务器权限问题](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-07-svn-server-ban.md "svn服务器权限问题")
+[git复制到svn](https://github.com/wenruo95/algorithm/blob/master/shell/copy-git-svn.sh "git复制到svn")
 
-[java、jsp、js区别](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-08-java-js-jsp-dis.md "java、jsp、js区别")
+[复制markdown到git](https://github.com/wenruo95/algorithm/blob/master/shell/copy-svn-git-markdown.sh "复制markdown到git")
 
-[tomcat移除端口](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-14-tomcat-remove-port-name.md "tomcat移除端口")
+[svn复制到git](https://github.com/wenruo95/algorithm/blob/master/shell/copy-svn-git.sh "svn复制到git")
 
-[跳台阶](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-30-jump-taijie.md "跳台阶")
+## [c](https://github.com/wenruo95/c "c")
 
-[myeclipse svn](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-30-myeclipse-svn.md "myeclipse svn")
+[2048](https://github.com/wenruo95/algorithm/blob/master/c/2048.c  "2048")
 
-[tomcat密码](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-07-30-tomcat-mag-pwd.md "tomcat密码")
+[数组](https://github.com/wenruo95/algorithm/blob/master/c/arrayc "数组")
 
-[mysql常见错误](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-09-05-mysql-error.md "mysql常见错误")
+[数组](https://github.com/wenruo95/algorithm/blob/master/c/arrayc.c "数组")
 
-[ubuntu grub引导](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-09-17-ubuntu-grub-ydao.md "ubuntu grub引导")
+[Java输入](https://github.com/wenruo95/algorithm/blob/master/c/c1_print.c "Java输入")
 
-[ubuntu ssh登录](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-09-19-ubuntu-ssh-loginerror.md "ubuntu ssh登录")
+[五子棋](https://github.com/wenruo95/algorithm/blob/master/c/fivechess.c "五子棋")
 
-[ubuntu远程windows](https://github.com/wenruo95/algorithmn/markdown/blob/master/2015-12-30-ubuntu-line-to-windows.md "ubuntu远程windows")
+[猜数字](https://github.com/wenruo95/algorithm/blob/master/c/guessNumber.c "猜数字")
 
-[ubuntu常用命令行1](https://github.com/wenruo95/algorithmn/markdown/blob/master/2016-01-05-ubuntu-command-lines.md "ubuntu常用命令行1")
+[哈希表](https://github.com/wenruo95/algorithm/blob/master/c/hash.c "哈希表")
 
-[书签](https://github.com/wenruo95/algorithmn/markdown/blob/master/2016-01-11-bookmark.md "书签")
+[哈希表测试](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c "哈希表测试")
 
-[Vim命令行](https://github.com/wenruo95/algorithmn/markdown/blob/master/2016-01-11-vim-lines.md "Vim命令行")
+[Lua与c交互](https://github.com/wenruo95/algorithm/blob/master/c/lua与C简单交互 "Lua与c交互")
 
-[vim插件](https://github.com/wenruo95/algorithmn/markdown/blob/master/2016-01-11-vim-plugins.md "vim插件")
+[main](https://github.com/wenruo95/algorithm/blob/master/c/main.cpp "main")
 
-[ubuntu软件](https://github.com/wenruo95/algorithmn/markdown/blob/master/2017-05-20-ubuntu-software.md "ubuntu软件")
+[测试](https://github.com/wenruo95/algorithm/blob/master/c/test.c "测试")
 
-[vim配置](https://github.com/wenruo95/algorithmn/markdown/blob/master/2017-09-27-vim-vimrc-config.md "vim配置")
+## [python](https://github.com/wenruo95/python "python")
 
-[Lua面向对象](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-02-LuaOO.md "Lua面向对象")
+[python测试](https://github.com/wenruo95/algorithm/blob/master/python/helloworld.py "python测试")
 
-[博客分类](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-02-blog-category.md "博客分类")
+## [markdown](https://github.com/wenruo95/markdown "markdown")
 
-[计算机网络](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-03-computer-network.md "计算机网络")
+[Java输入](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-05-19-java-input.md "Java输入")
 
-[Lua load公式使用](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-05-Lua-Load-公式使用.md "Lua load公式使用")
+[Maven常见错误](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-05-30-maven-error-1.md "Maven常见错误")
 
-[八皇后](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-15-eight-quene.md "八皇后")
+[svn服务器导入](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-07-svn-import.md "svn服务器导入")
 
-[ubuntu常用命令行2](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-25-ubuntu-line.md "ubuntu常用命令行2")
+[svn服务器权限问题](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-07-svn-server-ban.md "svn服务器权限问题")
 
-[算法](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-29-algorithm.md "算法")
+[java、jsp、js区别](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-08-java-js-jsp-dis.md "java、jsp、js区别")
 
-[lua字符串](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-29-lua-string.md "lua字符串")
+[tomcat移除端口](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-14-tomcat-remove-port-name.md "tomcat移除端口")
 
-[操作系统](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-29-operate-system.md "操作系统")
+[跳台阶](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-30-jump-taijie.md "跳台阶")
 
-[Unix编程](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-29-unix-programe.md "Unix编程")
+[myeclipse svn](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-30-myeclipse-svn.md "myeclipse svn")
 
-[Skynet学习研究](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-30-skynet-study.md "Skynet学习研究")
+[tomcat密码](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-07-30-tomcat-mag-pwd.md "tomcat密码")
 
-[王阳明 知行合一](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-30-王阳明-知行合一.md "王阳明 知行合一")
+[mysql常见错误](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-09-05-mysql-error.md "mysql常见错误")
 
-[Lua基础](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-01-31-LuaBase.md "Lua基础")
+[ubuntu grub引导](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-09-17-ubuntu-grub-ydao.md "ubuntu grub引导")
 
-[mysql索引](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-02-11-MySQL-Index.md "mysql索引")
+[ubuntu ssh登录](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-09-19-ubuntu-ssh-loginerror.md "ubuntu ssh登录")
 
-[随机数](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-02-12-randcode.md "随机数")
+[ubuntu远程windows](https://github.com/wenruo95/algorithm/blob/master/markdown/2015-12-30-ubuntu-line-to-windows.md "ubuntu远程windows")
 
-[深度优先、广度优先](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-02-28-DFS-BFS.md "深度优先、广度优先")
+[ubuntu常用命令行1](https://github.com/wenruo95/algorithm/blob/master/markdown/2016-01-05-ubuntu-command-lines.md "ubuntu常用命令行1")
 
-[树](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-02-28-tree.md "树")
+[书签](https://github.com/wenruo95/algorithm/blob/master/markdown/2016-01-11-bookmark.md "书签")
 
-[人工智能](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-03-13-人工智能.md "人工智能")
+[Vim命令行](https://github.com/wenruo95/algorithm/blob/master/markdown/2016-01-11-vim-lines.md "Vim命令行")
 
-[C++面试要求及学习笔记](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-03-14-C++.md "C++面试要求及学习笔记")
+[vim插件](https://github.com/wenruo95/algorithm/blob/master/markdown/2016-01-11-vim-plugins.md "vim插件")
 
-[redis常用命令行](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-03-14-redis.md "redis常用命令行")
+[ubuntu软件](https://github.com/wenruo95/algorithm/blob/master/markdown/2017-05-20-ubuntu-software.md "ubuntu软件")
 
-[redis数据库](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-03-14-redis.md "redis数据库")
+[vim配置](https://github.com/wenruo95/algorithm/blob/master/markdown/2017-09-27-vim-vimrc-config.md "vim配置")
 
-[markdown常用语法](https://github.com/wenruo95/algorithmn/markdown/blob/master/2018-03-21-markdown.md "markdown常用语法")
+[Lua面向对象](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-02-LuaOO.md "Lua面向对象")
 
-[README.md](https://github.com/wenruo95/algorithmn/markdown/blob/master/README.md "README.md")
+[博客分类](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-02-blog-category.md "博客分类")
 
-[关于我](https://github.com/wenruo95/algorithmn/markdown/blob/master/aboutme.md "关于我")
+[计算机网络](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-03-computer-network.md "计算机网络")
 
-[new1](https://github.com/wenruo95/algorithmn/markdown/blob/master/new1.md "new1")
+[Lua load公式使用](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-05-Lua-Load-公式使用.md "Lua load公式使用")
 
-[new2](https://github.com/wenruo95/algorithmn/markdown/blob/master/new2.md "new2")
+[八皇后](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-15-eight-quene.md "八皇后")
 
-## [algorithmn:shell](https://github.com/wenruo95/algorithmn/shell "algorithmn/shell")
+[ubuntu常用命令行2](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-25-ubuntu-line.md "ubuntu常用命令行2")
 
-[权限问题](https://github.com/wenruo95/algorithmn/shell/blob/master/chown.sh "权限问题")
+[算法](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-29-algorithm.md "算法")
 
-[git复制到svn](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-git-svn.sh "git复制到svn")
+[lua字符串](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-29-lua-string.md "lua字符串")
 
-[复制markdown到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git-markdown.sh "复制markdown到git")
+[操作系统](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-29-operate-system.md "操作系统")
 
-[svn复制到git](https://github.com/wenruo95/algorithmn/shell/blob/master/copy-svn-git.sh "svn复制到git")
+[Unix编程](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-29-unix-programe.md "Unix编程")
 
-## [algorithmn:python](https://github.com/wenruo95/algorithmn/python "algorithmn/python")
+[Skynet学习研究](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-30-skynet-study.md "Skynet学习研究")
 
-[python测试](https://github.com/wenruo95/algorithmn/python/blob/master/helloworld.py "python测试")
+[王阳明 知行合一](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-30-王阳明-知行合一.md "王阳明 知行合一")
 
-## [algorithmn:config](https://github.com/wenruo95/algorithmn/config "algorithmn/config")
+[Lua基础](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-01-31-LuaBase.md "Lua基础")
 
-[vim配置文件](https://github.com/wenruo95/algorithmn/config/blob/master/.vimrc "vim配置文件")
+[mysql索引](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-02-11-MySQL-Index.md "mysql索引")
 
-## [algorithmn:go](https://github.com/wenruo95/algorithmn/go "algorithmn/go")
+[随机数](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-02-12-randcode.md "随机数")
 
-## [algorithmn:c](https://github.com/wenruo95/algorithmn/c "algorithmn/c")
+[深度优先、广度优先](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-02-28-DFS-BFS.md "深度优先、广度优先")
 
-[2048](https://github.com/wenruo95/algorithmn/c/blob/master/2048.c  "2048")
+[树](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-02-28-tree.md "树")
 
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc "数组")
+[人工智能](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-03-13-人工智能.md "人工智能")
 
-[数组](https://github.com/wenruo95/algorithmn/c/blob/master/arrayc.c "数组")
+[C++面试要求及学习笔记](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-03-14-C++.md "C++面试要求及学习笔记")
 
-[Java输入](https://github.com/wenruo95/algorithmn/c/blob/master/c1_print.c "Java输入")
+[redis常用命令行](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-03-14-redis.md "redis常用命令行")
 
-[五子棋](https://github.com/wenruo95/algorithmn/c/blob/master/fivechess.c "五子棋")
+[redis数据库](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-03-14-redis.md "redis数据库")
 
-[猜数字](https://github.com/wenruo95/algorithmn/c/blob/master/guessNumber.c "猜数字")
+[markdown常用语法](https://github.com/wenruo95/algorithm/blob/master/markdown/2018-03-21-markdown.md "markdown常用语法")
 
-[哈希表](https://github.com/wenruo95/algorithmn/c/blob/master/hash.c "哈希表")
+[README.md](https://github.com/wenruo95/algorithm/blob/master/markdown/README.md "README.md")
 
-[哈希表测试](https://github.com/wenruo95/algorithmn/c/blob/master/hashtest.c "哈希表测试")
+[关于我](https://github.com/wenruo95/algorithm/blob/master/markdown/aboutme.md "关于我")
 
-[Lua与c交互](https://github.com/wenruo95/algorithmn/c/blob/master/lua与C简单交互 "Lua与c交互")
+[new1](https://github.com/wenruo95/algorithm/blob/master/markdown/new1.md "new1")
 
-[main](https://github.com/wenruo95/algorithmn/c/blob/master/main.cpp "main")
+[new2](https://github.com/wenruo95/algorithm/blob/master/markdown/new2.md "new2")
 
-[测试](https://github.com/wenruo95/algorithmn/c/blob/master/test.c "测试")
+## [config](https://github.com/wenruo95/config "config")
 
-## [algorithmn:java](https://github.com/wenruo95/algorithmn/java "algorithmn/java")
+[vim配置文件](https://github.com/wenruo95/algorithm/blob/master/config/.vimrc "vim配置文件")
 
-[Java测试](https://github.com/wenruo95/algorithmn/java/blob/master/HelloWorld.java "Java测试")
+## [go](https://github.com/wenruo95/go "go")
 
-## [algorithmn:c:improve](https://github.com/wenruo95/algorithmn/c/improve "algorithmn/c/improve")
+## [c++](https://github.com/wenruo95/c++ "c++")
 
-## [algorithmn:c++](https://github.com/wenruo95/algorithmn/c++ "algorithmn/c++")
+[排序](https://github.com/wenruo95/algorithm/blob/master/c++/sort.cpp "排序")
 
-[排序](https://github.com/wenruo95/algorithmn/c++/blob/master/sort.cpp "排序")
+## [c:improve](https://github.com/wenruo95/c/improve "c/improve")
 
-## [algorithmn:js](https://github.com/wenruo95/algorithmn/js "algorithmn/js")
+## [js](https://github.com/wenruo95/js "js")
 
-[markdown解析器](https://github.com/wenruo95/algorithmn/js/blob/master/marked.js "markdown解析器")
+[markdown解析器](https://github.com/wenruo95/algorithm/blob/master/js/marked.js "markdown解析器")
 
-[markdown解析器-压缩版](https://github.com/wenruo95/algorithmn/js/blob/master/marked.min.js "markdown解析器-压缩版")
+[markdown解析器-压缩版](https://github.com/wenruo95/algorithm/blob/master/js/marked.min.js "markdown解析器-压缩版")
 
-[markdown解析测试](https://github.com/wenruo95/algorithmn/js/blob/master/test.html "markdown解析测试")
+[markdown解析测试](https://github.com/wenruo95/algorithm/blob/master/js/test.html "markdown解析测试")
 

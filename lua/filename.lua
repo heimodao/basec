@@ -1,5 +1,5 @@
 local filename =  {
-	["algorithmn/markdown"] = {
+	["markdown"] = {
 		{filename = "2015-05-19-java-input.md", 				title = "Java输入",},
 		{filename = "2016-01-11-bookmark.md", 					title = "书签",},
 		{filename = "2018-01-29-unix-programe.md", 				title = "Unix编程",},
@@ -46,7 +46,7 @@ local filename =  {
 		{filename = "2018-03-14-redis.md",						title = "redis常用命令行",},
 		{filename = "2018-03-21-markdown.md",					title = "markdown常用语法",},
 	},
-	["algorithmn/c"] = {
+	["c"] = {
 		{filename = "2048.c ", 									title ="2048",},
 		{filename = "arrayc", 									title ="数组",},
 		{filename = "arrayc.c", 								title ="数组",},  
@@ -59,13 +59,13 @@ local filename =  {
 		{filename = "main.cpp",									title ="main",},
 		{filename = "test.c",									title ="测试",},
 	},
-	["algorithmn/c/improve"] = {
+	["c/improve"] = {
 	
 	},
-	["algorithmn/c++"] = {
+	["c++"] = {
 		{filename = "sort.cpp",									title ="排序",},
 	},
-	["algorithmn/lua"] = {
+	["lua"] = {
 		{filename = "bigint_multipli.lua",						title ="大整数相乘-分治",},
 		{filename = "eight_queen.lua",							title ="八皇后问题",},
 		{filename = "fibonacci.lua",							title ="费布拉切数列",},
@@ -75,23 +75,23 @@ local filename =  {
 		{filename = "randcode.lua",								title ="简单随机数问题",},
 		{filename = "sort.lua",									title ="排序",},
 	},
-	["algorithmn/java"] = {
+	["java"] = {
 		{filename = "HelloWorld.java",							title ="Java测试",},
 	},
-	["algorithmn/js"] = {
+	["js"] = {
 		{filename = "marked.js",								title ="markdown解析器",},
 		{filename = "marked.min.js",							title ="markdown解析器-压缩版",},
 		{filename = "test.html",								title ="markdown解析测试",},
 	},
-	["algorithmn/config"] = {
+	["config"] = {
 		{filename = ".vimrc",									title ="vim配置文件",},
 	},
-	["algorithmn/go"] = {
+	["go"] = {
 	},
-	["algorithmn/python"] = {
+	["python"] = {
 		{filename = "helloworld.py",							title ="python测试",},
 	},
-	["algorithmn/shell"] = {
+	["shell"] = {
 		{filename = "chown.sh",									title = "权限问题"},
 		{filename = "copy-git-svn.sh",							title = "git复制到svn"},
 		{filename = "copy-svn-git.sh",							title = "svn复制到git"},
