@@ -1,10 +1,16 @@
 # algorithm
 
 > author:zw
+
+
 > date  :2018-02-11
+
  
 > 学习方法、需要学习算法资料来源于：https://github.com/nonstriater/Learn-Algorithms
+
+
 > [博客及代码目录](menu.md) 
+
 
 ## 学习方法
  
