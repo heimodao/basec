@@ -1,5 +1,5 @@
 local filename =  {
-	["markdown"] = {
+	["algorithmn/markdown"] = {
 		{filename = "2015-05-19-java-input.md", 				title = "Java输入",},
 		{filename = "2016-01-11-bookmark.md", 					title = "书签",},
 		{filename = "2018-01-29-unix-programe.md", 				title = "Unix编程",},
@@ -42,6 +42,9 @@ local filename =  {
 		{filename = "2016-01-05-ubuntu-command-lines.md", 		title = "ubuntu常用命令行1",},
 		{filename = "2018-01-29-operate-system.md",				title = "操作系统",},
 		{filename = "README.md", 								title = "README.md",},
+		{filename = "2018-03-14-C++.md",						title = "C++面试要求及学习笔记",},
+		{filename = "2018-03-14-redis.md",						title = "redis常用命令行",},
+		{filename = "2018-03-21-markdown.md",					title = "markdown常用语法",},
 	},
 	["algorithmn/c"] = {
 		{filename = "2048.c ", 									title ="2048",},
@@ -75,6 +78,16 @@ local filename =  {
 	["algorithmn/java"] = {
 		{filename = "HelloWorld.java",							title ="Java测试",},
 	},
+	["algorithmn/js"] = {
+		{filename = "marked.js",								title ="markdown解析器",},
+		{filename = "marked.min.js",							title ="markdown解析器-压缩版",},
+		{filename = "test.html",								title ="markdown解析测试",},
+	},
+	["algorithmn/config"] = {
+		{filename = ".vimrc",									title ="vim配置文件",},
+	},
+	["algorithmn/go"] = {
+	},
 	["algorithmn/python"] = {
 		{filename = "helloworld.py",							title ="python测试",},
 	},
@@ -83,9 +96,6 @@ local filename =  {
 		{filename = "copy-git-svn.sh",							title = "git复制到svn"},
 		{filename = "copy-svn-git.sh",							title = "svn复制到git"},
 		{filename = "copy-svn-git-markdown.sh",					title = "复制markdown到git"},
-	},
-	["wenruo95.gtihub.com"] = {
-
 	},
 }
 
