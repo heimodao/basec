@@ -5,25 +5,55 @@
 
 > date  :2018-02-11
 
- 
-> 学习方法、需要学习算法资料来源于：https://github.com/nonstriater/Learn-Algorithms
-
-
 > [博客及代码目录](menu.md) 
 
+## 算法题型 
 
-## 学习方法
- 
-* 把所有经典算法写一遍  
-* 看算法有关源码   
-* 加入算法学习社区，相互鼓励学习   
-* 看经典书籍  
-* 刷题   
+* 暴力枚举
+
+* 动态规划
+
+* DFS/BFS
+
+* 数学问题
+
+* 模拟现实
+
+* 贪心算法
+
+* 字符串算法
+
+## 算法
+
+	 图搜索  （广度优先、深度优先）深度优先特别重要
+	 排序
+	 动态规划
+	 匹配算法和网络流算法
+	 正则表达式和字符串匹配
+	 贪婪算法
+	 概率方法
+	 近似算法
+	 三路划分-快速排序
+	 合并排序（更具扩展性，复杂度类似快速排序）
+	 DF/BF 搜索 （要知道使用场景）
+	 Prim  / Kruskal （最小生成树）
+	 Dijkstra （最短路径算法）
+	 选择算法
+
+## 数据结构
+
+	 HashMap （真的要知道所有哈希结构）
+	 图和树（红黑树很好学） (red-black trees are good to learn)
+	 堆（优先级队列）
+	 栈/队列（必须知道的基础内容）
+	 Tries | 字典树
+
+## 阶段
+
+https://www.zhihu.com/question/23148377/answer/36824071
 
 
 ## 基本数据结构和算法
-
-这些算法全部自己敲一遍：
 
 ### 链表
 
@@ -109,7 +139,7 @@
 * 红黑树 （一种自平衡的`二叉查找树`）  
 * KMP    字符串匹配算法
 * DP (动态规划 dynamic programming)   
-* A*寻路算法： 求解最短路径 
+* A* 寻路算法： 求解最短路径 
 * Dijkstra：最短路径算法 （八卦下：Dijkstra是荷兰的计算机科学家,提出”信号量和PV原语“,"解决哲学家就餐问题",”死锁“也是它提出来的） 
 * 遗传算法  
 * 启发式搜索   
@@ -206,9 +236,7 @@
 《深入理解计算机系统》    
 《TCP/IP详解三卷》    
 《UNIX网络编程二卷》  
-《UNIX环境高级编程：第2版》  
-    
-     
+《UNIX环境高级编程：第2版》
 《The practice of programming》   Brian Kernighan和Rob Pike    
 《writing efficient programs》  优化   
 《The science of programming》 证明代码段的正确性   800块一本   
@@ -228,12 +256,16 @@
 [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-By-July)   
 [微软面试100题](http://blog.csdn.net/column/details/ms100.html)   
 [程序员编程艺术](http://blog.csdn.net/v_JULY_v/article/details/6460494)   
+[需要学习算法](https://github.com/nonstriater/Learn-Algorithms)
+[程序员需要了解的算法](https://www.zhihu.com/question/23148377/answer/36847393)
+[刷题相关](https://www.zhihu.com/question/36579347/answer/217953945)
+[算法分级](https://www.zhihu.com/question/23148377/answer/36824071）
 
 
 ### 基本算法演示 
 
-http://sjjg.js.zwu.edu.cn/SFXX/sf1/sfys.html  
-http://www.cs.usfca.edu/~galles/visualization/Algorithms.html  
+http://sjjg.js.zwu.edu.cn/SFXX/sf1/sfys.html
+http://www.cs.usfca.edu/~galles/visualization/Algorithms.html
   
    
 ### 编程网站

@@ -18,6 +18,7 @@ http://www.cnblogs.com/maybe2030/p/4715035.html
 https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/
 
 C、C++开源项目
+https://github.com/jobbole/awesome-c-cn
 https://www.ezlippi.com/blog/2014/12/c-open-project.html
 
 程序员资料
@@ -30,6 +31,13 @@ https://github.com/CyC2018/InterviewNotes
 
 
 http://blog.csdn.net/oh_maxy/article/details/10903929
+
+
+redis:
+https://www.667123.com/redis/355
+
+git:
+https://www.667123.com/git/528
 
 
 CPU擅长逻辑控制，串行的运算。和通用类型数据运算不同，GPU擅长的是大规模并发计算，这正是密码破解等所需要的。所以GPU除了图像处理，也越来越多的参与到计算当中来。

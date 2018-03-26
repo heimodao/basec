@@ -13,5 +13,10 @@ int main(void) {
 			printf("%d\tbreak-second:%d\n", ++count, j--);
 		}
 	}
+	int index;
+	for (index = 0; index < 10;index++) {
+		printf("%d\t",index);
+	}
+	printf("\n%d",index);
 	return 0;
 }
