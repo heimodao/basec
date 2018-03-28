@@ -2,24 +2,168 @@
  * author:linkzw
  * date:2018-03-26 17:12:33
  * 排序 
- * 归并排序递归版、迭代版
+ * 0.随机数组								完成
+ * 内部排序==>使用内存
+ * 内部排序==>插入排序
+ * 1.直接插入排序							完成
+ * 2.折半插入排序							完成
+ * 3.希尔排序
+ * 内部排序==>选择排序
+ * 4.简单选择排序							未完
+ * 5.堆排序
+ * 内部排序==>交换排序
+ * 6.冒泡排序								已完
+ * 7.快速排序								未完
+ * 内部排序==>归并排序
+ * 8.归并排序递归版、迭代版					已完
+ * 内部排序==>基数排序
+ * 9.基数排序								未完
+ * 外部排序==>内存和外存结合使用
+ * 10.堆排序
+ * 11.桶排序
 */
 #include<stdio.h>
 #include<stdlib.h>
 
+int min(int x,int y);
+void swap(int *p,int *q);
+void random_array(int size, int min, int max, int arr[]);
+void print_array(int arr[], int len);
+void insert_sort(int arr[], int len);
+void binary_insert_sort(int arr[], int len);
+void shell_sort(int arr[], int len);
+
+void bubble_sort(int arr[], int len);
+void quick_sort(int arr[], int len);
 void merge_sort(int arr[], int len);
 void merge_sort_recursion(int arr[], int len);
 void _merge_sort(int arr[], int reg[], int start, int end);
-int min(int x, int y);
 
+// math.min
 int min(int x, int y) {
 	return x < y ? x : y;
 }
 
-// 归并排序-迭代版
-// 将序列每相邻两个数字进行归并操作，形成ceil(n/2)个序列,排序后每个序列包含该两/一个元素
-// 若此时序列数不是一个将上述序列再次归并，形成ceil(n/4)个序列,每个序列包含四/三个元素
-// 重复步骤2，直到所有元素排序完毕，即序列数为1
+// 交换两个数字
+void swap(int *p, int *q) {
+	if (*p == *q) {
+		return;
+	}
+	*p = *p ^ *q;
+	*q = *q ^ *p;
+	*p = *p ^ *q;
+}
+
+// 产生size个[min,max]的随机数
+void random_array(int size, int min, int max, int arr[]) {
+	int i;
+	for (i = 0; i < size; i++) {
+		arr[i] = (rand() % (max - min + 1)) + 1;
+	}
+	print_array(arr, size);
+}
+
+// 打印数组
+void print_array(int arr[], int len) {
+	int i;
+	for (i = 0; i < len; i++) {
+		printf("%d\t",arr[i]);
+		if (i % 10 == 9) {
+			printf("\n");
+		}
+	}
+	printf("\n");
+}
+
+// 1.直接插入排序
+void insert_sort(int arr[], int len) {
+	int i;
+	for (i = 1; i < len; i++) {
+		if (arr[i - 1] > arr[i]) {
+			int key = arr[i], j = 0;
+			while (i > 0 && arr[i - 1] > key) {
+				arr[i] = arr[i - 1];
+				i--;
+			}
+			arr[i] = key;
+		}
+	}
+}
+
+// 2.折半插入排序
+void binary_insert_sort(int arr[], int len) {
+	int i, j, low, mid, high, key;
+	for (i = 1; i < len; i++) {
+		if (arr[i - 1] > arr[i]) {
+			low = 0, high = i - 1;
+			while(low <= high) {
+				mid = (high + low) >> 1;
+				if (arr[mid] > arr[i]) {
+					high = mid - 1;
+				} else {
+					low = mid + 1;
+				}
+			}
+			key = arr[i];
+			for (j = i - 1; j > high; j--) {
+				arr[j + 1] = arr[j];
+			}
+			arr[j + 1] = key;
+		}
+	}
+}
+
+// 3.希尔排序
+void shell_sort(int arr[],int len) {
+
+}
+
+// 4.简单选择排序
+void select_sort(int arr[], int len) {
+
+}
+
+// 5.堆排序
+void heap_sort(int arr[], int len) {
+
+}
+
+// 6.冒泡排序
+// a.比较相邻的元素，如果第一个比第二个大，就交换两个
+// b.对每一对相邻元素做同样工作，从第一对到最后一对。
+// c.重复ab，直到没有任何一对数字需要比较
+void bubble_sort(int arr[], int len) {
+	int i, j;
+	for (i = 0; i < len; i++) {
+		for (j = 0; j < len - i; j++) {
+			if (arr[j] > arr[j + 1]) {
+				swap(&arr[j], &arr[j + 1]);
+			}
+		}
+	}
+	/*
+	// 优化版: 移动次数少，但是比较次数多
+	for (i = 0; i < len; i++) {
+		int key = 0;
+		for (j = 0; j < len - i; j++) {
+			if (arr[j] > arr[key]) {
+				key = j;
+			}
+		}
+		swap(&arr[key], &arr[min(j, len - i - 1)]);
+	}
+	*/
+}
+
+// 7.快速排序
+void quick_sort(int arr[], int len) {
+
+}
+
+// 8.1归并排序-迭代版
+// a.将序列每相邻两个数字进行归并操作，形成ceil(n/2)个序列,排序后每个序列包含该两/一个元素
+// b.若此时序列数不是一个将上述序列再次归并，形成ceil(n/4)个序列,每个序列包含四/三个元素
+// c.重复步骤b，直到所有元素排序完毕，即序列数为1
 void merge_sort(int arr[], int len) {
 	int *a = arr;
 	int *b = (int*)malloc(len * sizeof(int));
@@ -46,8 +190,7 @@ void merge_sort(int arr[], int len) {
 				b[key++] = arr[start2++];
 			}
 			*/
-			int low = start, mid = min(start + seg, len), high = min(start + seg + seg, len);
-			int k = low;
+			int low = start, mid = min(start + seg, len), high = min(start + seg + seg, len); int k = low;
 			int start1 = low, end1 = mid;
 			int start2 = mid, end2 = high;
 			while (start1 < end1 && start2 < end2) {
@@ -79,23 +222,20 @@ void merge_sort(int arr[], int len) {
 	}
 }
 
-// 归并排序-递归版
+// 8.2归并排序-递归版
 void merge_sort_recursion(int arr[], int len) {
 	int reg[len];
 	// 递归法
 	_merge_sort(arr,reg,0,len - 1);
-	int i;
-	for (i = 0; i < len; i++) {
-		printf("%d\t", arr[i]);
-	}
 }
 
-// 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
-// 设定两个指针，最初位置分别为两个已经排序序列的起始位置
-// 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置
-// 重复步骤3直到某一指针到达序列尾
-// 将另一序列剩下的所有元素直接复制到合并序列尾
-void _merge_sort(int arr[],int reg[],int start,int end) {
+// 8.2归并排序-递归版
+// a.申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
+// b.设定两个指针，最初位置分别为两个已经排序序列的起始位置
+// c.比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置
+// d.重复步骤c直到某一指针到达序列尾
+// e.将另一序列剩下的所有元素直接复制到合并序列尾
+void _merge_sort(int arr[], int reg[], int start, int end) {
 	if (start >= end) {
 		return;
 	}
@@ -119,13 +259,29 @@ void _merge_sort(int arr[],int reg[],int start,int end) {
 	}
 }
 
+// 9.基数排序
+// 10.
 int main() {
-	int arr[20] = {11,23,4,5,47,48,90,93,8,1,23,34,52,45,15,43,22,89,10,20};
-	printf("递归版本:\n");
-	merge_sort_recursion(arr,20);
-	int arr2[20] = {11,23,4,5,47,48,90,93,8,1,23,34,52,45,15,43,22,89,10,20};
-	printf("\n迭代版本:\n");
-	merge_sort(arr2,20);
-	printf("\n归并排序完\n");
+	int size = 20,min = 1,max = 100;
+	// 产生100个[1,100]的随机数
+	int arr[size];
+	random_array(size, min, max, arr);
+	/*
+	// 归并排序测试 递归版 迭代版
+	merge_sort_recursion(arr, size);
+	print_array(arr, size);
+	merge_sort(arr, size);
+	print_array(arr, size);
+	// 直接插入排序
+	insert_sort(arr, size);
+	print_array(arr, size);
+	// 二分查找
+	binary_insert_sort(arr, size);
+	print_array(arr, size);
+	// 冒泡排序测试
+	bubble_sort(arr, size);
+	print_array(arr, size);
+	*/
+	print_array(arr, size);
 	return 0;
 }
