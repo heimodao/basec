@@ -7,9 +7,9 @@
  * 内部排序==>插入排序
  * 1.直接插入排序							完成
  * 2.折半插入排序							完成
- * 3.希尔排序
+ * 3.希尔排序								完成
  * 内部排序==>选择排序
- * 4.简单选择排序							未完
+ * 4.简单选择排序							完成
  * 5.堆排序
  * 内部排序==>交换排序
  * 6.冒泡排序								已完
@@ -114,13 +114,33 @@ void binary_insert_sort(int arr[], int len) {
 }
 
 // 3.希尔排序
+// gap插入排序
 void shell_sort(int arr[],int len) {
-
+	int gap,i,j,temp;
+	for (gap = len >> 1; gap > 0; gap = gap >> 1) {
+		for (i = gap; i < len; i++) {
+			temp = arr[j = i];
+			while (j >= gap && arr[j - gap] > temp) {
+				arr[j] = arr[j - gap];
+				j -= gap;
+			}
+			arr[j] = temp;
+		}
+	}
 }
 
 // 4.简单选择排序
 void select_sort(int arr[], int len) {
-
+	int i,j,temp;
+	for (i = 0; i < len - 1; i ++) {
+		int temp = i;
+		for (j = i + 1; j < len; j++) {
+			if (arr[j] < arr[temp]) {
+				temp = j;
+			}
+		}
+		swap(&arr[i],&arr[temp]);
+	}
 }
 
 // 5.堆排序
@@ -142,7 +162,7 @@ void bubble_sort(int arr[], int len) {
 		}
 	}
 	/*
-	// 优化版: 移动次数少，但是比较次数多
+	// 优化版: 移动次数少，但是比较次数多 <=> 详见简单选择排序select_sort
 	for (i = 0; i < len; i++) {
 		int key = 0;
 		for (j = 0; j < len - i; j++) {
@@ -275,13 +295,17 @@ int main() {
 	// 直接插入排序
 	insert_sort(arr, size);
 	print_array(arr, size);
-	// 二分查找
+	// 折半插入排序
 	binary_insert_sort(arr, size);
+	print_array(arr, size);
+	// 希尔排序
+	shell_sort(arr, size);
 	print_array(arr, size);
 	// 冒泡排序测试
 	bubble_sort(arr, size);
 	print_array(arr, size);
 	*/
+	select_sort(arr, size);
 	print_array(arr, size);
 	return 0;
 }
