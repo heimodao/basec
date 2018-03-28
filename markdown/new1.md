@@ -39,6 +39,14 @@ https://www.667123.com/redis/355
 git:
 https://www.667123.com/git/528
 
+学习：
+https://github.com/CyC2018/Interview-Notebook
+https://blog.csdn.net/ithomer
+
+skynet：
+https://manistein.github.io/blog/post/server/skynet/skynet%E6%BA%90%E7%A0%81%E8%B5%8F%E6%9E%90/
+https://github.com/cloudwu/skynet/wiki/Cluster
+https://blog.codingnow.com/2017/03/skynet_cluster.html
 
 CPU擅长逻辑控制，串行的运算。和通用类型数据运算不同，GPU擅长的是大规模并发计算，这正是密码破解等所需要的。所以GPU除了图像处理，也越来越多的参与到计算当中来。
  
