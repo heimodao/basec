@@ -10,23 +10,24 @@
  * 3.希尔排序								完成
  * 内部排序==>选择排序
  * 4.简单选择排序							完成
- * 5.堆排序
+ * 5.堆排序									未完
  * 内部排序==>交换排序
  * 6.冒泡排序								已完
  * 7.快速排序								未完
  * 内部排序==>归并排序
  * 8.归并排序递归版、迭代版					已完
  * 内部排序==>基数排序
- * 9.基数排序								未完
  * 外部排序==>内存和外存结合使用
- * 10.堆排序
- * 11.桶排序
+ * 9.基数排序								未完
+ * 10.计数排序								未完
+ * 11.桶排序								未完
 */
 #include<stdio.h>
 #include<stdlib.h>
 
-int min(int x,int y);
-void swap(int *p,int *q);
+int max(int x, int y);
+int min(int x, int y);
+void swap(int *p, int *q);
 void random_array(int size, int min, int max, int arr[]);
 void print_array(int arr[], int len);
 void insert_sort(int arr[], int len);
@@ -35,10 +36,17 @@ void shell_sort(int arr[], int len);
 
 void bubble_sort(int arr[], int len);
 void quick_sort(int arr[], int len);
+void _quick_sort(int arr[], int len);
+void quick_sort_recursion(int arr[], int low, int high);
 void merge_sort(int arr[], int len);
 void merge_sort_recursion(int arr[], int len);
 void _merge_sort(int arr[], int reg[], int start, int end);
 
+#define MAX(x,y) (x) > (y) ? (x) : (y)
+// math.max
+int max(int x, int y) {
+	return x > y ? x : y;
+}
 // math.min
 int min(int x, int y) {
 	return x < y ? x : y;
@@ -177,7 +185,73 @@ void bubble_sort(int arr[], int len) {
 
 // 7.快速排序
 void quick_sort(int arr[], int len) {
+	int partition = arr[0];
+	//quick_sort_recursion(arr, 0, len - 1);
+	_quick_sort(arr, len);
+}
 
+typedef struct _Range {
+	int start;
+	int end;
+} Range;
+
+Range new_range(int start, int end) {
+	Range r;
+	r.start = start;
+	r.end = end;
+	return r;
+}
+
+// 7.快速排序<=>迭代版
+void _quick_sort(int arr[], int len) {
+	Range r[len];
+	int p = 0;
+	r[p++] = new_range(0,len);
+	while(p) {
+		Range range = r[--p];
+		int low = range.start, high = range.end;
+		if (low >= high) {
+			return;
+		}
+		int begin = low, end = high;
+		int partition = arr[low];
+		while (low <= high) {
+			while (high > low && arr[high] > partition) {
+				high--;
+			}
+			arr[low++] = arr[high];
+			while(low < end && arr[low] < partition) {
+				low++;
+			}
+			arr[high--] = arr[low];
+		}
+		arr[high + 1] = partition;
+		print_array(arr,len);
+		r[p++] = new_range(begin, max(high - 1, begin));
+		r[p++] = new_range(min(high + 2, end), end);
+	}
+}
+
+// 7.快速排序<=>递归版
+void quick_sort_recursion(int arr[], int low, int high) {
+	if (low >= high) {
+		return;
+	}
+	int begin = low, end = high;
+	int partition = arr[low];
+	while (low <= high) {
+		while (high > low && arr[high] > partition) {
+			high--;
+		}
+		arr[low++] = arr[high];
+		while(low < end && arr[low] < partition) {
+			low++;
+		}
+		arr[high--] = arr[low];
+	}
+	arr[high + 1] = partition;
+	quick_sort_recursion(arr, begin, max(low - 1, begin));
+	quick_sort_recursion(arr, min(low + 1, end), end);
 }
 
 // 8.1归并排序-迭代版
@@ -301,11 +375,13 @@ int main() {
 	// 希尔排序
 	shell_sort(arr, size);
 	print_array(arr, size);
+	select_sort(arr, size);
+	print_array(arr, size);
 	// 冒泡排序测试
 	bubble_sort(arr, size);
 	print_array(arr, size);
 	*/
-	select_sort(arr, size);
+	quick_sort(arr, size);
 	print_array(arr, size);
 	return 0;
 }
