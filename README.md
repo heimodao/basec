@@ -31,10 +31,20 @@
 
 - [ ] A Star算法
 
-## 未分类
+## 常用算法
 
+- [x] 汉诺塔问题 [C](https://github.com/wenruo95/algorithm/blob/master/c/hannuota.c)
+- [ ] 字符串反转 [C](https://github.com/wenruo95/algorithm/blob/master/c/algo-string.c)
+- [x] 求质数更高效方法 [C](https://github.com/wenruo95/algorithm/blob/master/c/prime-number.c)
 - [x] 大整数乘法 <=> [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/bigint_multipli.lua)
+- [x] 费波那契数列 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua)
+- [x] 各类hash算法整理 [C Hash](https://github.com/wenruo95/algorithm/blob/master/c/hash.c) [C Hash Test](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c)
+- [ ] 八皇后问题 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/eight_queen.lua)
 
 ## 小工具
+
+- [x] 简单随机数生成验证 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua)
+- [x] 微信通讯录导出 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/name-email.lua) [Target](https://github.com/wenruo95/algorithm/blob/master/lua/contacts.txt)
+- [x] 根据文件生成git url地址导航 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua) [File Data](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua)
 
 
