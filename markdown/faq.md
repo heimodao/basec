@@ -86,9 +86,25 @@
 	ctrl + ]
 	quit
 	
+## ls显示
+
+	只显示文件夹 		ls -l | grep ^d
+	只显示文件 			ls -l | grep ^-
+	文件是以 "-"开头 ， 文件夹是 d， 所以这就是后面grep的内容。
 	
 
-	
-	
-	
-	
+## 密钥
+
+生成密钥
+
+	ssh-keygen -t rsa -f filename -C email@email.com
+	-f:生成名称 生成filename filename.pub
+	-C:用户邮箱
+
+远程连接免密登录
+
+	ssh-copy-id user@host
+
+## 查看ubuntu所有用户
+
+	cat /etc/passwd |cut -f 1 -d :
