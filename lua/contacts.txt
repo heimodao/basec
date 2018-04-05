@@ -1,6 +1,6 @@
 
-baidu	:baidu@china.com
+baidu	:	baidu@china.com
 
-ali	:ali@china.com
+ali	:	ali@china.com
 
-tencent	:tencent@china.com
+tencent	:	tencent@china.com
