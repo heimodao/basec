@@ -33,7 +33,7 @@
 - [ ] 伸展树(splay tree 分裂树)   
 - [ ] 平衡二叉树AVL    
 - [ ] 红黑树  
-- [ ] B树,B+,B*  
+- [ ] B树,B+,B *  
 - [ ] R树  
 - [ ] Trie树(前缀树)  
 - [ ] 后缀树  
@@ -83,6 +83,11 @@
 - [ ] 图搜索: 深度优先(DFS)、广度优先(BFS)
 
 
+## 动态规划、贪心算法
+
+- [ ] 背包问题 [C](https://github.com/wenruo95/algorithm/blog/master/c/knapsack.c)
+
+
 ## 常用算法
 
 - [x] 汉诺塔问题 [C](https://github.com/wenruo95/algorithm/blob/master/c/hannuota.c)
@@ -94,6 +99,20 @@
 - [ ] 八皇后问题 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/eight_queen.lua)
 
 
+## 海量数据处理
+
+- [ ] Hash映射/分而治之
+- [ ] Bitmap
+- [ ] Bloom filter(布隆过滤器)
+- [ ] Trie树
+- [ ] 数据库索引
+- [ ] 倒排索引(Inverted Index)
+- [ ] 双层桶划分
+- [ ] 外排序
+- [ ] simhash算法
+- [ ] 分布处理之Mapreduce
+
+
 ## 小工具
 
 - [x] 简单随机数生成验证 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua)
@@ -101,5 +120,5 @@
 - [x] 根据文件生成git url地址导航 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua) [File Data](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua)
 
 
- 
+
  
