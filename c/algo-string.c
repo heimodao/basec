@@ -9,6 +9,11 @@
 
 #include<stdio.h>
 
+// I am a student.
+// student. a am I
+void reverse_string(char[] str) {
+
+}
 
 int main(){
 	char* str = "abcdef";

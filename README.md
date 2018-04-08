@@ -90,6 +90,7 @@
 
 ## 常用算法
 
+- [x] 和为S的连续正数序列 [C](https://github.com/wenruo95/algorithm/blob/master/find-continuous-sequence.c)
 - [x] 汉诺塔问题 [C](https://github.com/wenruo95/algorithm/blob/master/c/hannuota.c)
 - [ ] 字符串反转 [C](https://github.com/wenruo95/algorithm/blob/master/c/algo-string.c)
 - [x] 求质数更高效方法 [C](https://github.com/wenruo95/algorithm/blob/master/c/prime-number.c)

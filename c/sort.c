@@ -206,9 +206,10 @@ Range new_range(int start, int end) {
 void _quick_sort(int arr[], int len) {
 	Range r[len];
 	int p = 0;
-	r[p++] = new_range(0,len);
+	r[p++] = new_range(0,len - 1);
 	while(p) {
 		Range range = r[--p];
+		//printf("%d\t%d\t%d\n",p,range.start,range.end);
 		int low = range.start, high = range.end;
 		if (low >= high) {
 			return;
