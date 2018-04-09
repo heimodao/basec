@@ -2,8 +2,9 @@
 layout: post
 title: myeclipse集成svn
 date: 2015-07-30 11:43:01
-categories: svn myeclipse tools
-author: svn myeclipse tools
+categories: Tools
+tags: svn myeclipse tools
+author: linkzw
 ---
 
 * content

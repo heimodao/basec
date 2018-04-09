@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "maven常见问题或错误解决"
-categories: maven error
+categories: Tools Fixbug
 tags: maven error
 author: linkzw
 ---

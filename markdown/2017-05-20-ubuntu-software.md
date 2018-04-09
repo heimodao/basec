@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Ubuntu软件安装"
-categories: ubuntu
-tags: demo
+categories: Ubuntu
+tags: ubuntu
 author: linkzw
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "ubuntu远程连接windows"
-categories: ubuntu windows
+categories: Ubuntu
+tags: ubuntu windows
 author: linkzw
 ---
 

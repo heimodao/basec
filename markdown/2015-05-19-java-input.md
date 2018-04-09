@@ -2,7 +2,7 @@
 layout: post
 title: "java输入的几种方式"
 categories: Java
-tags: Java 
+tags: Java IO
 author: linkzw
 ---
 

@@ -2,7 +2,8 @@
 layout: post
 title: "mysql一些常见错误"
 author: "曾巍"
-categories: mysql error 
+categories: DB Fixbug
+tags: mysql fixbug
 author: linkzw
 ---
 

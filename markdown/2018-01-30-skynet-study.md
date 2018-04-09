@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "SKynet框架"
-categories: Skynet
-tags: skynet
+categories: Skynet Frame
+tags: skynet frame 框架
 author: linkzw
 ---
 

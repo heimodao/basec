@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "设计模式"
-categories: design-pattern
+categories: 设计模式
 tags: 设计模式
 author: linkzw
 ---

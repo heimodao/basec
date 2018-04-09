@@ -2,8 +2,8 @@
 layout: post
 title: myeclipse导入svn项目
 date: 2015-07-07 11:16:01
-categories: svn myeclipse
-tags: svn tools
+categories: Tools
+tags: svn myeclipse tools
 author: linkzw
 ---
 

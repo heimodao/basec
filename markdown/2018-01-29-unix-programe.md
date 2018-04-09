@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "unix环境编程"
-categories: ubuntu
+categories: Ubuntu
 tags: ubuntu
 author: linkzw
 ---

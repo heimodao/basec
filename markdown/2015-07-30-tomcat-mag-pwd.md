@@ -2,7 +2,8 @@
 layout: post
 title: "tomcat管理员密码设置"
 date: 2015-07-30 11:19:26
-categories: tomcat tools
+categories: Tools
+tags: tomcat tools
 author: linkzw
 ---
 

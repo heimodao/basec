@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "数据库索引和Hash"
-categories: Algorithm MySQL
-tags: MySQL
+title: "mysql数据库索引和Hash"
+categories: Algorithm DB
+tags: 数据库 mysql
 author: linkzw
 ---
 

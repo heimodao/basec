@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "计算机网络"
-categories: 计算机网络
-tags: demo
+categories: TCP/IP
+tags: 计算机网络 TCP/IP
 author: linkzw
 ---
 

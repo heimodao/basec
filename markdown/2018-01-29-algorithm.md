@@ -2,7 +2,7 @@
 layout: post
 title: "算法"
 categories: Algorithm
-tags: demo
+tags: 算法
 author: linkzw
 ---
 

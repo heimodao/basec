@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "ubuntu常用命令行"
-categories: ubuntu
+title: "ubuntu常用命令行1"
+categories: Ubuntu
+tags: ubuntu
 author: linkzw
 ---
 

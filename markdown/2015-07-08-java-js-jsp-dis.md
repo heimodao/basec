@@ -3,7 +3,7 @@ layout: post
 title: java、js、javascript、jsp的区别
 date: 2015-07-08 17:00:01
 categories: Java
-tags: Java
+tags: Java Js Jsp
 author: linkzw
 ---
 
