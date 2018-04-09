@@ -11,7 +11,7 @@
 
 ## 链表
 
-- [x] 链表 [C](https://github.com/wenruo95/algorithm/c/linked-list.c)
+- [x] 链表 [C](https://github.com/wenruo95/algorithm/blog/master/c/linked-list.c)
 - [ ] 双向链表
 
 ## 栈、队列
