@@ -1,5 +1,7 @@
 # algorithm
 
+> 学习过程中的算法知识总结
+
 > [博客及代码目录](menu.md) 
 
 > [资源整理](source.md)
