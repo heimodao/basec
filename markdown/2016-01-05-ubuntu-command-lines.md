@@ -110,6 +110,7 @@ shell命令
 
 
     mkdir 新建文件夹名
+    touch test.txt      # 创建test.txt文件
 
 ---
 
