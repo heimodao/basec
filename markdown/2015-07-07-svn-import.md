@@ -3,7 +3,8 @@ layout: post
 title: myeclipse导入svn项目
 date: 2015-07-07 11:16:01
 categories: svn myeclipse
-excerpt: myeclipse导入svn项目
+tags: svn tools
+author: linkzw
 ---
 
 * content

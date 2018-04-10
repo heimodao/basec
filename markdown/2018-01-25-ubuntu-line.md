@@ -1,3 +1,15 @@
+---
+layout: post
+title: "ubuntu命令行"
+categories: ubuntu
+tags: linux
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 # ubuntu的使用
 
 

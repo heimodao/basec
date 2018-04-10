@@ -2,13 +2,13 @@
 layout: post
 title: "tomcat移除端口号和项目名"
 date: 2015-07-14 12:51:27
-categories: tomcat
-excerpt: tomcat移除端口号和项目名
+categories: tomcat tools
+tags: tomcat tools
+author: linkzw
 ---
 
 * content
 {:toc}
-
 
 
 ## 前言

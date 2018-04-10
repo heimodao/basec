@@ -1,14 +1,13 @@
 ---
 layout: post
 title: "java输入的几种方式"
-categories: java 
-excerpt: java输入的几种方式
+categories: Java
+tags: Java 
+author: linkzw
 ---
 
 * content
 {:toc}
-
-
 
 ## 前言
 

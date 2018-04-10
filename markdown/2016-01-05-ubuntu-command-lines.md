@@ -2,6 +2,7 @@
 layout: post
 title: "ubuntu常用命令行"
 categories: ubuntu
+author: linkzw
 ---
 
 * content

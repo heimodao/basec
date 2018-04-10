@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "maven常见问题或错误解决"
-date: 2015-05-30 21:09:26
-categories: maven error 
-excerpt: version of spring facet could not be detected
+categories: maven error
+tags: maven error
+author: linkzw
 ---
 
 * content
 {:toc}
-
-
 
 ## Versions of Spring facet could not be detected
 

@@ -1,3 +1,15 @@
+---
+layout: post
+title: "unix环境编程"
+categories: ubuntu
+tags: ubuntu
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 # note 2018-01-29-unix-programe
 
 ## IO、文件和目录、标准IO库

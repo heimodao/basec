@@ -2,8 +2,9 @@
 layout: post
 title: svn服务器权限
 date: 2015-07-07 11:14:01
-categories: svn
-excerpt: svn服务器权限
+categories: svn tools
+tag: svn
+author: linkzw
 ---
 
 * content

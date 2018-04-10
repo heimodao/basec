@@ -1,3 +1,15 @@
+---
+layout: post
+title: "操作系统"
+categories: Linux
+tags: demo
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 操作系统
 	进程管理与调度
 	内存管理

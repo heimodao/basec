@@ -3,7 +3,7 @@ layout: post
 title: "ubuntu中ssh登录错误"
 date: 2015-09-19 10:54:26
 categories: ubuntu error
-excerpt: ubuntu中ssh登录错误
+author: linkzw
 ---
 
 * content

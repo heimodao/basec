@@ -1,3 +1,15 @@
+---
+layout: post
+title: "算法"
+categories: Algorithm
+tags: demo
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 数组、栈、队列、循环队列、链表、树、二叉树、红黑树、AVL树、图、有向无环图、无向图、堆、散列表、集合、树状数组、
 
 

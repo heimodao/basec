@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Lua字符串函数"
+categories: Lua
+tags: lua
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 Lua String
 http://mobile.51cto.com/iphone-285815.htm
 

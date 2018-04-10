@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Ubuntu软件安装"
+categories: ubuntu
+tags: demo
+author: linkzw
+---
+
+* content
+{:toc}
+
+
 # ubuntu 必装软件教程
 
 ## git

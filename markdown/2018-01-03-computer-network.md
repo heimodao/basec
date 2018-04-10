@@ -1,3 +1,14 @@
+---
+layout: post
+title: "计算机网络"
+categories: 计算机网络
+tags: demo
+author: linkzw
+---
+
+* content
+{:toc}
+
 
 网络组成：拓扑结构、链路、网络节点、网络协议、传输介质、网卡、集线器、ISO/OSI模型 节点通讯：交换技术、虚电路与数据报、交换机、路由技术 
 

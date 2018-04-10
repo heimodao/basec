@@ -2,8 +2,9 @@
 layout: post
 title: "跳台阶问题-java"
 date: 2015-07-30 11:19:26
-categories: java 算法
-excerpt: 跳台阶问题 java
+categories: Java Algorithm
+tags: Java Algorithm
+author: linkzw
 ---
 
 * content

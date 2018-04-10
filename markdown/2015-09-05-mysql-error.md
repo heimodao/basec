@@ -3,7 +3,7 @@ layout: post
 title: "mysql一些常见错误"
 author: "曾巍"
 categories: mysql error 
-excerpt: mysql 1064
+author: linkzw
 ---
 
 * content

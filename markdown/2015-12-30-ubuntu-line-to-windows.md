@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "ubuntu 远程连接windows"
+title: "ubuntu远程连接windows"
 categories: ubuntu windows
+author: linkzw
 ---
 
 * content

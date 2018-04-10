@@ -3,7 +3,7 @@ layout: post
 title: "ubuntu grub引导"
 author: "曾巍"
 categories: ubuntu error
-excerpt: ubuntu grub引导
+author: linkzw
 ---
 
 * content
