@@ -66,6 +66,7 @@
 
 ### 字符串算法  
 
+- [x] [字符串旋转](https://github.com/wenruo95/algorithm/blob/master/c/string-reverse.c)
 - [ ] 排序
 - [ ] 查找 => BF算法  
 - [ ] 查找 => KMP算法  
