@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+void string_reverse(char str[],int num);
+void left_move2right(char str[]);
+void string_reverse2(char str[],int num);
+void swap(char *p,char *q);
+void _string_reverse(char str[],int low,int high);
+
 /**
  * 字符串旋转:
  * abcdef	==> defabc
@@ -10,11 +16,11 @@
  */
 void string_reverse(char str[], int num) {
 	while(num-- > 0) {
-		left_remove2tail(str);
+		left_move2right(str);
 	}
 }
 
-void left_remove2tail(char str[]) {
+void left_move2right(char str[]) {
 	char t = str[0];
 	int i;
 	for (i = 1; str[i] != '\0'; i++) {
@@ -30,14 +36,31 @@ void left_remove2tail(char str[]) {
  * abcdef => cbafed => defabc
 */
 void string_reverse2(char str[], int num) {
-	int len = 0;
+	int len;
+	for (len = 0; str[len] != '\0'; len++);
 	_string_reverse(str, 0, num - 1);
+	printf("step1:%s\n", str);
 	_string_reverse(str, num, len - 1);
+	printf("step2:%s\n", str);
 	_string_reverse(str, 0, len - 1);
+	printf("step3:%s\n", str);
+}
+
+void swap(char *p, char *q) {
+	if (*p == *q) {
+		return;
+	}
+	*p = *p ^ *q;
+	*q = *p ^ *q;
+	*p = *p ^ *q;
 }
 
 void _string_reverse(char str[], int low, int high) {
-
+	int mid = (high - low) >> 1;
+	int i;
+	for (i = 0; i <= mid; i++) {
+		swap(&str[low + i], &str[high - i]);
+	}
 }
 
 int main() {
@@ -45,17 +68,8 @@ int main() {
 	printf("before:%s\n",str);
 	string_reverse(str, 3);
 	printf("after:%s\n", str);
+	string_reverse2(str,3);
+	printf("after2:%s\n", str);
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 

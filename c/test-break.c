@@ -18,5 +18,4 @@ int main(void) {
 		printf("%d\t",index);
 	}
 	printf("\n%d",index);
-	return 0;
 }
