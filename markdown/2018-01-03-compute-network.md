@@ -144,6 +144,18 @@ IMAP				143
 
 - [socket阻塞](https://blog.csdn.net/hguisu/article/details/7453390)
 
+
+## select/poll/epoll模型
+	
+	- 阻塞 I/O（blocking IO）
+	- 非阻塞 I/O（nonblocking IO）
+	- I/O 多路复用（ IO multiplexing）
+	- 信号驱动 I/O（ signal driven IO）
+	- 异步 I/O（asynchronous IO）
+
+	注：由于signal driven IO在实际中并不常用，所以我这只提及剩下的四种IO Model。
+
+
 ## HTTP 状态码
 
 服务器返回的响应报文中第一行为状态行，包含了状态码以及原因短语，来告知客户端请求的结果。

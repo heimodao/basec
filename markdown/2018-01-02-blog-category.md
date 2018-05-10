@@ -12,19 +12,23 @@ author: linkzw
 
 关于博客分类的设想
 
-C
-C++
-Algorithm
-Java
-Lua
-操作系统
-计算机网络
-Ubuntu
-Web
-fixbug
-架构
-tools
-其他
+读书
+求学
+T-C/C++
+T-Java/Go
+T-Python/Js
+T-Lua
+T-Ubuntu
+T-数据库
+T-计算机网络
+T-操作系统
+T-开发工具
+T-算法
+源码阅读
+Fixbug
+随笔Faq
+杂记
+
 
 
 ## 语言
