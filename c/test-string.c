@@ -2,6 +2,7 @@
 #include<stdlib.h>
 
 int main() {
-	unsigned int i;
+	char str[11] = "0123456789";
+	printf("%s\n",str);
 	return 0;
 }

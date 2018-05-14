@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int main(void) {
+	/*
 	int count = 0;
 	int i = 10;
 	while (i > 0) {
@@ -18,4 +19,7 @@ int main(void) {
 		printf("%d\t",index);
 	}
 	printf("\n%d",index);
+	*/
+	printf("%d\n",1<<0);
+	return 0;
 }
