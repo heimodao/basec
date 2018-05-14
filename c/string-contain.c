@@ -66,6 +66,7 @@ int string_contain_3(char *a,char *b) {
 	}
 	return 1;
 }
+
 // 4.hashtable
 int string_contain_4(char *a,char *b) {
 	int hash = 0;
@@ -79,6 +80,13 @@ int string_contain_4(char *a,char *b) {
 		}
 	}
 	return 1;
+}
+
+// 兄弟字符串: 字符一样，顺序不一样
+// 解决思路：在确保不溢出的情况下使用素数相乘
+// 最佳方法:使用之前的hashtable方法，只在意是否包含这个数据不在意数据 
+int brother_string(char *a,char *b) {
+
 }
 
 int main() {
