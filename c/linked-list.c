@@ -3,6 +3,7 @@
 // purpose : 链表
 #include<stdio.h>
 
+// 建议参考stack-list.c 以及test-link.c
 typedef struct _Node {
 	int data;
 	struct Node *next;

@@ -16,106 +16,115 @@ typedef struct Stack {
 } Stack;
 
 // new
-Stack new_stack(char *str) {
-	struct Node *phead = (Node)malloc(sizeof(Node));
+Stack* new_stack(char *str) {
+	Node *phead = (Node*)malloc(sizeof(Node));
 	if (phead == NULL) {
 		printf("%s初始化失败:头结点内存分配失败",str);
 		exit(1);
 	}
 	phead->next = NULL;
-	//Stack stack = (Stack) malloc(sizeof(Stack));
-	Stack stack;
-	stack->head = *phead;
+
+	Stack *stack = (Stack*) malloc(sizeof(Stack));
+	if (stack == NULL) {
+		printf("%s初始化失败:栈内存分配失败",str);
+		exit(1);
+	}
+	stack->head = phead;
 	stack->size = 0;
 	stack->name = str;
 	return stack;
 }
 
 // push
-int stack_push(Stack stack,int val) {
-	Node *pnode = (Node) malloc(sizeof(Node));
+int stack_push(Stack *stack,int val) {
+	Node *pnode = (Node*) malloc(sizeof(Node));
 	if (pnode == NULL) {
 		printf("创建节点失败");
 		exit(1);
 	}
 	pnode->val = val;
-	Node *phead = Stack->head;
-	pnode->next = phead->next;
-	phead->next = pnode;
+	pnode->next = stack->head->next;
+	stack->head->next = pnode;
+
 	stack->size += 1;
 	return val;
 }
 
 // pop
-int stack_pop(Stack stack) {
+int stack_pop(Stack *stack) {
 	if (stack->size <= 0) {
 		printf("栈数据为空，无法执行删除操作");
 		return -1;
 	}
-	Node *phead = stack->head;
-	Node *pop = phead->next;
-	phead->next = pop->next;
-	int val = *pop->data;
-	free(*pop);
-	pop = NULL;
+	Node *pop = stack->head->next;
+	stack->head->next = pop->next;
 	stack->size -= 1;
+
+	int val = pop->val;
+	free(pop);
+	pop = NULL;
 	return val;
 }
 
 // size
-int stack_size(Stack stack) {
+int stack_size(Stack *stack) {
 	return stack->size;
 }
 
 // isempty
-int stack_isempty(Stack stack) {
+int stack_isempty(Stack *stack) {
 	return stack->size == 0;
 }
 
 // destroy
-char* destroy_stack(Stack stack) {
+char* destroy_stack(Stack *stack) {
 	Node *pnode = NULL;
 	char *stack_name = stack->name;
 	while(stack->head != NULL) {
-		*pnode = stack->head;
+		pnode = stack->head;
 		stack->head = stack->head->next;
-		free(*pnode);
+		free(pnode);
+		pnode = NULL;
 	}
+	free(stack);
+	stack = NULL;
 	return stack_name;
 }
 
 // print
-void print_stack(Stack stack) {
+void print_stack(Stack *stack) {
 	if (stack_isempty(stack)) {
 		return;
 	}
-	printf("%s栈共有%d个元素.",stack->name,stack->size);
-	Node *pnode = stack->head;
+	printf("\n%s栈共有%d个元素.\n",stack->name,stack->size);
+	Node *pnode = stack->head->next;
 	while(pnode != NULL) {
-		printf("%d\n",pnode->data);
-		*pnode = pnode->next;
+		printf("%d\n",pnode->val);
+		pnode = pnode->next;
 	}
-	*pnode = NULL;
-	printf("\n");
+	pnode = NULL;
+	printf("--------输出完毕----------\n\n");
 }
 
 // gethead
-int stack_gethead(Stack stack) {
+int stack_gethead(Stack *stack) {
 	if (stack_isempty(stack)) {
 		printf("%s栈为空",stack->name);
 		return -1;
 	}
-	return stack->head->next->data;
+	return stack->head->next->val;
 }
 
 int main() {
-	Stack stack = (Stack)new_stack("test");
+	Stack *stack = (Stack*)new_stack("test");
 	stack_push(stack,1);
 	stack_push(stack,2);
 	stack_push(stack,3);
+	stack_pop(stack);
 	stack_push(stack,4);
 	print_stack(stack);
 	printf("%s栈表头元素%d\n",stack->name,stack_gethead(stack));
+	printf("销毁栈:%s\n",destroy_stack(stack));
 	return 0;
 }
 
