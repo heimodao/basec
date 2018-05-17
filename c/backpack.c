@@ -1,3 +1,4 @@
+// 背包问题
 #include<stdio.h>
 
 #define MAX_WEIGHT  300
@@ -28,25 +29,43 @@ World* create_world(int num) {
 	return pworld;
 }
 
-// 普通算法: 按照排列组合对所有总重量低于300的进行排列，选择最合适的方案
-// 效率极低，时间复杂度很大
 
+// 穷举:效率极低，时间复杂度很大
 
 
 // 贪婪: 从前往后或者从后往前选择当前最佳方案组合 
 // 问题: 可能会避开正确方案，有较大空间浪费的可能性
+void greedy(int weight[],int prices[],int maxweight,int len) {
+	int i;
+	double value[];
+	for (i = 0; i < len; i++) {
+		if (weight[i] == 0) {
+			printf("重量不能为0\n");
+			return;
+		}
+		value[i] = prices[i] / weight[i];
+	}
+	int programe[];
+	printf("-----当前最佳方案-----\n");
+	for (i = 0; programe[i] != '\0'; i++) {
+		int id = programe[i];
+		printf("programe:%d\tweight:%d\tprice:\n",id,weight[id],price[id]);
+	}
+	printf("-----打印完毕-----\n");
+}
 
 
 // 动态规划:
 // 将原问题分解为相对简单的子问题
 // 如将背包问题：第一个不放的最优、第二个不放的最有，则第n个最优为之前所有最优的整合
-// int f[100];
-// f[0] = f[1] = 1;
-// for (i = 2; i < 99; i += 1) {
-//		f[i] = f[i - 2] + f[i - 1];
-// }
 
 
 int main() {
+	int weight[] = {1,2,5,6,7};
+	int prices[] = {1,6,18,22,28}
+	int maxweight = 11;
+	int len = 5
+	greedy(weight,prices,maxweight,len);
+
 	return 0;
 }
