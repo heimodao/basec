@@ -3,8 +3,7 @@
 
 // https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/05.04.md
 
-// array_stack
-//
+// 链表实现栈
 typedef struct Stack {
 	int i;
 	int j;
@@ -61,7 +60,6 @@ void destroy_stack() {
 }
 
 // 使用简单栈将递归变成循环
-
 int isalternately(char *a,char *b,char *str) {
 	init_stack();
 	int i = 0,j = 0,s = 0;
@@ -101,7 +99,7 @@ int isalternately(char *a,char *b,char *str) {
 		}
 	}
 	destroy_stack();
-	// 长度不等或者有数据不等
+	// 长度不等
 	if (*(a + i) != '\0' || *(b + j) != '\0' || *(str + s) != '\0') {
 		return 0;
 	}
