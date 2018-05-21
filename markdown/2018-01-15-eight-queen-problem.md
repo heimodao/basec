@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "八皇后问题"
-categories: Algorithm
-tags: demo 算法
+categories: 算法
+tags: demo 算法 Algorithm
 author: linkzw
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "计算机网络"
-categories: TCP/IP
+title: "计算机网络基本介绍"
+categories: 计算机网络
 tags: 计算机网络 TCP/IP
 author: linkzw
 ---

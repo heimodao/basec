@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "ubuntu命令行2"
-categories: Ubuntu
+title: "ubuntu命令行"
+categories: Faq
 tags: ubuntu
 author: linkzw
 ---

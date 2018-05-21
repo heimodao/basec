@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "博客分类"
-categories: Others
+categories: 其他
 tags: demo blog
 author: linkzw
 ---
@@ -12,8 +12,20 @@ author: linkzw
 
 关于博客分类的设想
 
-读书
-求学
+
+求知路
+C/C++
+Lua
+算法
+Faq
+开发工具
+操作系统
+计算机网络
+数据库
+框架
+其他
+
+
 T-C/C++
 T-Java/Go
 T-Python/Js

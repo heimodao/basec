@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "操作系统"
-categories: OS
-tags: 操作系统
+categories: 操作系统
+tags: OS
 author: linkzw
 ---
 

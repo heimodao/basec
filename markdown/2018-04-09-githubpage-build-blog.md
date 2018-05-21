@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "jekyll配置githubpage"
-categories: Tools
+categories: Faq
 tags: Jekyll github blog
 author: linkzw
 ---

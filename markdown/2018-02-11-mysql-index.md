@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "mysql数据库索引和Hash"
-categories: Algorithm DB
+categories: 数据库
 tags: 数据库 mysql
 author: linkzw
 ---

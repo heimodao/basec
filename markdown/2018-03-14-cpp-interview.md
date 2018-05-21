@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C++面试要求及题型"
-categories: C++
+categories: C/C++
 tags: C++
 author: linkzw
 ---
@@ -9,6 +9,25 @@ author: linkzw
 * content
 {:toc}
 
+
+## 语言基础
+
+1、C++中虚拟函数的实现机制。
+
+2、指针数组和数组指针的区别。
+
+3、malloc-free和new-delete的区别。
+
+4、sizeof和strlen的区别。
+
+5、描述函数调用的整个过程。
+
+6、C++ STL里面的vector的实现机制，
+
+当调用push_back成员函数时，怎么实现？
+	* 内存足则直接 placement new构造对象，否则扩充内存，转移对象，新对象placement new上去。
+	* 当调用clear成员函数时，做什么操作，如果要释放内存该怎么做。
+	* 调用析构函数，内存不释放。 clear没有释放内存，只是将数组中的元素置为空了，释放内存需要delete。
 
 ## 基本要求
 
@@ -23,6 +42,7 @@ author: linkzw
 	4. 了解 HTTP 协议等一些你的工作范围可能用到的协议
 	5. 学会使用库和其他语言写的服务交互，比如 Redis* 上面这些是写服务器的基础技能，不需要进阶就可以先写*  如果想点 Linux 专精，平时在 Linux 下工作，弄本 《Linux 编程》之类的书学习。
 
+	
 
 ## 实践路径
 

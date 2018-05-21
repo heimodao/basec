@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "redis使用总结"
-categories: DB
+categories: 数据库
 tags: Redis
 author: linkzw
 ---

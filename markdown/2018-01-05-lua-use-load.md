@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lua load使用"
+title: "Lua load的使用"
 categories: Lua
 tags: demo lua
 author: linkzw

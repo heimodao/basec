@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "树"
-categories: Algorithm
+title: "树的介绍及应用"
+categories: 算法
 tags: Algorithm Tree
 author: linkzw
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "unix环境编程"
-categories: Ubuntu
+categories: 操作系统
 tags: ubuntu
 author: linkzw
 ---
