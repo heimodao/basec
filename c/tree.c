@@ -12,36 +12,47 @@ typedef struct Node {
 	struct Node *next;
 } Node;
 
-int insert(SearchTree **tree,int val,SearchTree *parent) {
+SearchTree* new_tree(int val) {
 	SearchTree *node = (SearchTree*) malloc(sizeof(SearchTree));
 	if (node == NULL) {
 		printf("分配内存失败:%d\n",val);
-		return 0;
+		exit(0);
 	}
 	node->val = val;
 	node->lchild = NULL;
 	node->rchild = NULL;
+	return node;
+}
+
+int insert(SearchTree **tree,int val,SearchTree *parent) {
+	printf("insert.test1:%d->%p->%d\n",val,*tree,(*tree)->val);
 	if ((*tree) == NULL) {
+		SearchTree *node = new_tree(val);
 		node->parent = parent;
 		(*tree) = node;
 		return 1;
 	}
+	printf("insert.test2:%d\n",val);
 	if (val < (*tree)->val && (*tree)->lchild == NULL) {
+		SearchTree *node = new_tree(val);
 		node->parent = (*tree);
 		(*tree)->lchild = node;
 		return 1;
 	}
+	printf("insert.test3:%d\n",val);
 	if (val > (*tree)->val && (*tree)->rchild == NULL) {
+		SearchTree *node = new_tree(val);
 		node->parent = (*tree);
 		(*tree)->rchild = node;
 		return 1;
 	}
-	free(node);
+	printf("insert.test4:%d\n",val);
 	if (val < (*tree)->val) {
-		return insert(&(*tree)->lchild,val,(*tree));
+		return insert(&(*tree)->lchild,val,*tree);
 	}
+	printf("insert.test5:%d\n",val);
 	if (val > (*tree)->val) {
-		return insert(&(*tree)->rchild,val,(*tree));
+		return insert(&(*tree)->rchild,val,*tree);
 	}
 	return 1;
 }
@@ -228,9 +239,10 @@ void breadth_first_search(SearchTree *tree,Node *node) {
 }
 
 int main(void) {
-
-	SearchTree *tree;
+	printf("tree->start\n");
+	SearchTree *tree = NULL;
 	insert(&tree,8,NULL);
+	printf("tree->start2\n");
 	insert(&tree,3,NULL);
 	insert(&tree,10,NULL);
 	insert(&tree,1,NULL);
@@ -239,6 +251,7 @@ int main(void) {
 	insert(&tree,7,NULL);
 	insert(&tree,14,NULL);
 	insert(&tree,13,NULL);
+	printf("tree->end\n");
 
 	printf("先序排列:");
 	pre_order(tree);
@@ -258,10 +271,12 @@ int main(void) {
 	Node *stack = node_init();
 	deep_first_search(tree,stack);
 	node_free(stack);
+	printf("\nend->deep_first_search\n");
 	
 	Node *queue = node_init();
 	breadth_first_search(tree,queue);
 	node_free(queue);
+	printf("\nend->breadth_first_search\n");
 
 	tree_free(tree);
 
