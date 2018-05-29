@@ -12,7 +12,12 @@ author: linkzw
 
 # ubuntu的使用
 
-
+## 空间
+	
+	du -sh /home/linkzw/*
+	du -lh /home/linkzw/ | egrep '[0-9]G'
+	
+	
 ## 软件类
 
 
