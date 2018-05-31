@@ -101,7 +101,7 @@ int search(SearchTree *tree,int val) {
 
 int main(void) {
 
-	SearchTree *tree;
+	SearchTree *tree = NULL;
 	insert(&tree,8,NULL);
 	insert(&tree,3,NULL);
 	insert(&tree,10,NULL);
