@@ -21,36 +21,32 @@ SearchTree* new_tree(int val) {
 	node->val = val;
 	node->lchild = NULL;
 	node->rchild = NULL;
+	node->parent = NULL;
 	return node;
 }
 
 int insert(SearchTree **tree,int val,SearchTree *parent) {
-	printf("insert.test1:%d->%p->%d\n",val,*tree,(*tree)->val);
 	if ((*tree) == NULL) {
 		SearchTree *node = new_tree(val);
 		node->parent = parent;
 		(*tree) = node;
 		return 1;
 	}
-	printf("insert.test2:%d\n",val);
 	if (val < (*tree)->val && (*tree)->lchild == NULL) {
 		SearchTree *node = new_tree(val);
 		node->parent = (*tree);
 		(*tree)->lchild = node;
 		return 1;
 	}
-	printf("insert.test3:%d\n",val);
 	if (val > (*tree)->val && (*tree)->rchild == NULL) {
 		SearchTree *node = new_tree(val);
 		node->parent = (*tree);
 		(*tree)->rchild = node;
 		return 1;
 	}
-	printf("insert.test4:%d\n",val);
 	if (val < (*tree)->val) {
 		return insert(&(*tree)->lchild,val,*tree);
 	}
-	printf("insert.test5:%d\n",val);
 	if (val > (*tree)->val) {
 		return insert(&(*tree)->rchild,val,*tree);
 	}
@@ -129,12 +125,13 @@ int search(SearchTree *tree,int val) {
 	}
 }
 
-Node* node_init() {
+Node* new_node() {
 	Node *node = (Node *) malloc(sizeof(Node));
 	if (node == NULL) {
 		printf("栈初始化失败\n");
 		exit(0);
 	}
+	node->tree = NULL;
 	node->next = NULL;
 	return node;
 }
@@ -147,7 +144,7 @@ int node_isnull(Node *node) {
 void node_free(Node *node) {
 	Node *temp = node->next;
 	while(temp != NULL) {
-		node->next = temp;
+		node->next = temp->next;
 		free(temp);
 		temp = node->next;
 	}
@@ -187,7 +184,7 @@ void tail_push(Node *queue,SearchTree *tree) {
 
 	Node *tail = queue;
 	while(tail->next != NULL) {
-		tail = queue->next;
+		tail = tail->next;
 	}
 	node->next = tail->next;
 	tail->next = node;
@@ -208,7 +205,9 @@ void deep_first_search(SearchTree *tree,Node *node) {
 		if (tree->rchild != NULL) {
 			head_push(node,tree->rchild);
 		}
-		deep_first_search(NULL,node);
+		deep_first_search(tree->lchild,node);
+	} else {
+		deep_first_search(tree->rchild,node);
 	}
 }
 
@@ -228,21 +227,17 @@ void breadth_first_search(SearchTree *tree,Node *node) {
 	}
 	printf("->%d",tree->val);
 	if (tree->lchild != NULL) {
-		if (tree->lchild != NULL) {
-			tail_push(node,tree->lchild);
-		}
-		if (tree->rchild != NULL) {
-			tail_push(node,tree->rchild);
-		}
-		breadth_first_search(NULL,node);
+		tail_push(node,tree->lchild);
 	}
+	if (tree->rchild != NULL) {
+		tail_push(node,tree->rchild);
+	}
+	breadth_first_search(NULL,node);
 }
 
 int main(void) {
-	printf("tree->start\n");
 	SearchTree *tree = NULL;
 	insert(&tree,8,NULL);
-	printf("tree->start2\n");
 	insert(&tree,3,NULL);
 	insert(&tree,10,NULL);
 	insert(&tree,1,NULL);
@@ -251,7 +246,6 @@ int main(void) {
 	insert(&tree,7,NULL);
 	insert(&tree,14,NULL);
 	insert(&tree,13,NULL);
-	printf("tree->end\n");
 
 	printf("先序排列:");
 	pre_order(tree);
@@ -268,17 +262,24 @@ int main(void) {
 	printf("是否找到%d:%d\n",10,search(tree,10));
 	printf("是否找到%d:%d\n",15,search(tree,15));
 
-	Node *stack = node_init();
+	// 深度优先
+	Node *stack = NULL;
+	stack = (Node *)new_node();
+	printf("\nDFS:");
 	deep_first_search(tree,stack);
 	node_free(stack);
 	printf("\nend->deep_first_search\n");
 	
-	Node *queue = node_init();
+	// 广度优先
+	Node *queue = NULL;
+	queue = new_node();
+	printf("\nBFS:");
 	breadth_first_search(tree,queue);
 	node_free(queue);
 	printf("\nend->breadth_first_search\n");
 
 	tree_free(tree);
+
 
 	return 0;
 }
