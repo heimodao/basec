@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/05.04.md
+// 描述：https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/05.04.md
+// [issue](https://github.com/julycoding/The-Art-Of-Programming-By-July/issues/460)
 
 // 链表实现栈
 typedef struct Stack {

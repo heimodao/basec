@@ -9,24 +9,17 @@
 > [讨论区](https://github.com/wenruo95/algorithm/issues/1)
 
 
-# 数据结构
+# 基础结构
 
-> 四种线性结构的存储结构：顺序表、链表、索引、散列
+## 链表、栈、队列
+	
+链表实现栈和链表实现队列本质上是一样的，栈是后进先出，队列是先进先出。假设出栈都是从头出，那么栈采取头插，队列采取遍历到尾部插入。至于初始化、出栈、释放都是一样的。可以参照二叉树深度优先和广度优先对队列的简单实现[参考链接](https://github.com/wenruo95/algorithm/blob/master/c/tree.c) 。
+	
 
-> 两种常见的线性逻辑结构：队列、栈
-
-> 非线性逻辑结构：循环队列、双向队列、双向循环队列、树、图
-
-## 链表
-
-- [x] 链表 [C](https://github.com/wenruo95/algorithm/blob/master/c/linked-list.c)
+- [x] [链表反转](https://github.com/wenruo95/algorithm/blob/master/c/link-reverse.c)
+- [x] [链表实现栈](https://github.com/wenruo95/algorithm/blob/master/c/stack-link.c)
+- [x] [链表实现队列](https://github.com/wenruo95/algorithm/blob/master/c/queue-link.c)
 - [ ] 双向链表
-
-## 栈、队列
-
-- [ ] 栈
-- [ ] 队列
-
 
 ## 哈希表/散列表 (Hash Table)
 
@@ -34,23 +27,25 @@
 - [ ] 碰撞解决
 
 
-## 二叉树
+## 树
 
-- [ ] 二叉树    
-- [ ] 二叉查找树   
-- [ ] 伸展树(splay tree 分裂树)   
-- [ ] 平衡二叉树AVL    
-- [ ] 红黑树  
-- [ ] B树,B+,B *  
-- [ ] R树  
-- [ ] Trie树(前缀树)  
-- [ ] 后缀树  
-- [ ] 最优二叉树(赫夫曼树) 
-- [ ] 二叉堆 （大根堆，小根堆）   
-- [ ] 二项树    
-- [ ] 二项堆  
-- [ ] 斐波那契堆(Fibonacci Heap) 
+- [x] [二叉树、先序遍历、中序遍历、后序遍历、深度优先、广度优先](https://github.com/wenruo95/algorithm/blob/master/c/tree.c) 
+- [x] [二叉查找树](https://github.com/wenruo95/algorithm/blob/master/c/search-binary-tree.c)  
+- [ ] [红黑树](https://github.com/wenruo95/algorithm/blob/master/c/red-black-tree.c)  
+- [ ] [斐波那契堆(Fibonacci Heap)]() 
 
+
+## 图
+
+- [ ] A Star算法
+- [ ] 图的存储结构和基本操作（建立，遍历，删除节点，添加节点）   
+- [ ] 最小生成树  
+- [ ] 拓扑排序  
+- [ ] 关键路径 
+- [ ] [最小生成树==>Dijkstra]()
+- [ ] [最小生成树==>Floyd]() 
+- [ ] 最短路径: Floyd,Dijkstra,bellman-ford,spfa
+- [ ] 图搜索: 深度优先(DFS)、广度优先(BFS)
 
 # 算法
 
@@ -60,7 +55,7 @@
 - [x] 2.折半插入排序						
 - [x] 3.希尔排序
 - [x] 4.简单选择排序					
-- [ ] 5.堆排序	
+- [x] [5.堆排序](https://github.com/wenruo95/algorithm/blob/master/c/tree.c) ==> 中序遍历即为升序
 - [x] 6.冒泡排序
 - [x] 7.快速排序
 - [x] 8.归并排序递归版、迭代版
@@ -70,26 +65,14 @@
 - [ ] 11.桶排序
 
 
-### 字符串算法  
+## 字符串
 
 - [x] [字符串旋转](https://github.com/wenruo95/algorithm/blob/master/c/string-reverse.c)
-- [ ] 排序
-- [ ] 查找 => BF算法  
-- [ ] 查找 => KMP算法  
-- [ ] 查找 => BM算法  
-- [ ] 正则表达式
+- [ ] [字符串匹配(BF、BM、KMP)](https://github.com/wenruo95/algorithm/blob/master/c/kmp.c)
+- [x] [交替字符串](https://github.com/julycoding/The-Art-Of-Programming-By-July/issues/460)
+- [ ] [正则表达式](https://github.com/wenruo95/algorithm/blob/master/c/regexp-match.c)
 - [ ] 数据压缩
 
-
-## 图
-
-- [ ] A Star算法
-- [ ] 图的存储结构和基本操作（建立，遍历，删除节点，添加节点）   
-- [ ] 最小生成树  
-- [ ] 拓扑排序  
-- [ ] 关键路径  
-- [ ] 最短路径: Floyd,Dijkstra,bellman-ford,spfa
-- [ ] 图搜索: 深度优先(DFS)、广度优先(BFS)
 
 
 ## 动态规划、贪心算法
@@ -109,26 +92,40 @@
 - [ ] 八皇后问题 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/eight_queen.lua)
 
 
-## 海量数据处理
+## 海量数据处理方式
 
-- [ ] Hash映射/分而治之
-- [ ] Bitmap
-- [ ] Bloom filter(布隆过滤器)
+* 分而治之/hash映射 + hash统计 + 堆/快速/归并排序；
+* 双层桶划分
+* Bloom filter(布隆过滤器)/Bitmap(位图)；
+* Trie树/数据库/Inverted Index(倒排索引)；
+* 外排序；
+* 分布式处理之Hadoop/MapReduce。
+* simhash框架
+
+
+- [ ] 1.哈希分治；
+- [ ] 2.simhash算法
+- [ ] 3.外排序
+- [ ] MapReduce
+- [ ] 多层划分
+- [ ] 位图
+- [ ] Bloom filter布隆过滤器
 - [ ] Trie树
-- [ ] 数据库索引
-- [ ] 倒排索引(Inverted Index)
-- [ ] 双层桶划分
-- [ ] 外排序
-- [ ] simhash算法
-- [ ] 分布处理之Mapreduce
+- [ ] 数据库；
+- [ ] 10.倒排索引
 
+
+# 其他
 
 ## 小工具
 
 - [x] 简单随机数生成验证 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua)
 - [x] 微信通讯录导出 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/name-email.lua) [Target](https://github.com/wenruo95/algorithm/blob/master/lua/contacts.txt)
 - [x] 根据文件生成git url地址导航 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua) [File Data](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua)
+- [x] [c静态库动态库编译](https://github.com/wenruo95/algorithm/tree/master/c/compile)
 
+## 博文详述
 
+- [x](http://blog.linkzw.com/2018/01/29/algorithms/)
 
  

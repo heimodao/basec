@@ -10,6 +10,9 @@ author: linkzw
 {:toc}
 
 
+* [实现算法](https://github.com/wenruo95/algorithm)
+
+
 ## 学习基本步骤
 
 * 经典常用的数据结构和典型算法（如二分查找，快速排序、Hash表）
@@ -44,9 +47,11 @@ author: linkzw
 ### 排序
 ### 贪心
 ### 动态规划
-### DFS
+### [二叉搜索树](https://github.com/wenruo95/algorithm/blob/master/c/search-binary-tree.c)
+### [DFS、BFS](https://github.com/wenruo95/algorithm/blob/master/c/tree.c)
+
 	广搜是一层一层往外遍历，寻找最短路径，其策略是采取队列的方法。
-### BFS
+	
 ### 最小生成树
 
 最小生成树是最小代价连接所有点，其策略是贪心，比如Prim的策略是贪心+权重队列。
