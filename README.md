@@ -19,7 +19,7 @@
 - [x] [链表反转](https://github.com/wenruo95/algorithm/blob/master/c/link-reverse.c)
 - [x] [链表实现栈](https://github.com/wenruo95/algorithm/blob/master/c/stack-link.c)
 - [x] [链表实现队列](https://github.com/wenruo95/algorithm/blob/master/c/queue-link.c)
-- [ ] 双向链表
+- [x] [双向链表](https://github.com/wenruo95/algorithm/blob/master/c/double-link.c)
 
 ## 哈希表/散列表 (Hash Table)
 
