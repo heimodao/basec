@@ -2,7 +2,7 @@
 
 > 学习过程中的算法知识总结
 
-> [博客及代码目录](menu.md) 
+> [博客](https://blog.linkzw.com) 
 
 > [资源整理](source.md)
 
@@ -82,25 +82,25 @@
 
 ## 常用算法
 
-- [x] 和为S的连续正数序列 [C](https://github.com/wenruo95/algorithm/blob/master/find-continuous-sequence.c)
-- [x] 汉诺塔问题 [C](https://github.com/wenruo95/algorithm/blob/master/c/hannuota.c)
-- [ ] 字符串反转 [C](https://github.com/wenruo95/algorithm/blob/master/c/algo-string.c)
-- [x] 求质数更高效方法 [C](https://github.com/wenruo95/algorithm/blob/master/c/prime-number.c)
-- [x] 大整数乘法 <=> [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/bigint_multipli.lua)
-- [x] 费波那契数列 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua)
-- [x] 各类hash算法整理 [C Hash](https://github.com/wenruo95/algorithm/blob/master/c/hash.c) [C Hash Test](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c)
-- [ ] 八皇后问题 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/eight_queen.lua)
+- [x] [和为S的连续正数序列](https://github.com/wenruo95/algorithm/blob/master/find-continuous-sequence.c)
+- [x] [汉诺塔问题](https://github.com/wenruo95/algorithm/blob/master/c/hannuota.c)
+- [ ] [字符串反转](https://github.com/wenruo95/algorithm/blob/master/c/algo-string.c)
+- [x] [求质数更高效方法](https://github.com/wenruo95/algorithm/blob/master/c/prime-number.c)
+- [x] [大整数乘法](https://github.com/wenruo95/algorithm/blob/master/lua/bigint-multipli.lua)
+- [x] [费波那契数列](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua)
+- [x] [各类hash算法整理](https://github.com/wenruo95/algorithm/blob/master/c/hash.c) [Test](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c)
+- [ ] [八皇后问题](https://github.com/wenruo95/algorithm/blob/master/lua/eight-queen.lua)
 
 
 ## 海量数据处理方式
 
-* 分而治之/hash映射 + hash统计 + 堆/快速/归并排序；
-* 双层桶划分
-* Bloom filter(布隆过滤器)/Bitmap(位图)；
-* Trie树/数据库/Inverted Index(倒排索引)；
-* 外排序；
-* 分布式处理之Hadoop/MapReduce。
-* simhash框架
+	* 分而治之/hash映射 + hash统计 + 堆/快速/归并排序；
+	* 双层桶划分
+	* Bloom filter(布隆过滤器)/Bitmap(位图)；
+	* Trie树/数据库/Inverted Index(倒排索引)；
+	* 外排序；
+	* 分布式处理之Hadoop/MapReduce。
+	* simhash框架
 
 
 - [ ] 1.哈希分治；
@@ -119,13 +119,13 @@
 
 ## 小工具
 
-- [x] 简单随机数生成验证 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua)
-- [x] 微信通讯录导出 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/name-email.lua) [Target](https://github.com/wenruo95/algorithm/blob/master/lua/contacts.txt)
-- [x] 根据文件生成git url地址导航 [Lua](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua) [File Data](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua)
+- [x] [简单随机数生成验证](https://github.com/wenruo95/algorithm/blob/master/lua/randcode.lua)
+- [x] [微信通讯录导出](https://github.com/wenruo95/algorithm/blob/master/lua/name-email.lua) [Output](https://github.com/wenruo95/algorithm/blob/master/lua/contacts.txt)
+- [x] [根据文件生成git url地址导航](https://github.com/wenruo95/algorithm/blob/master/lua/giturl.lua) [Input](https://github.com/wenruo95/algorithm/blob/master/lua/filename.lua)
 - [x] [c静态库动态库编译](https://github.com/wenruo95/algorithm/tree/master/c/compile)
 
 ## 博文详述
 
-- [x](http://blog.linkzw.com/2018/01/29/algorithms/)
+- [x] [算法](https://blog.linkzw.com/2018/01/29/algorithms/)
 
  
