@@ -89,7 +89,7 @@
 - [x] [大整数乘法](https://github.com/wenruo95/algorithm/blob/master/lua/bigint-multipli.lua)
 - [x] [费波那契数列](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua)
 - [x] [各类hash算法整理](https://github.com/wenruo95/algorithm/blob/master/c/hash.c) [Test](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c)
-- [ ] [八皇后问题](https://github.com/wenruo95/algorithm/blob/master/lua/eight-queen.lua)
+- [x] [八皇后问题](https://github.com/wenruo95/algorithm/blob/master/c/eight-queen.lua):有点问题后续需要修改
 
 
 ## 海量数据处理方式
