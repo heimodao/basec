@@ -9,6 +9,8 @@ author: linkzw
 * content
 {:toc}
 
+## [深度优先、广度优先实现](https://github.com/wenruo95/algorithm/blob/master/c/tree.c) 
+
 ## 二叉树
 > 二叉查找树（BST） 笛卡尔树 MVP树 Top tree T树
 
