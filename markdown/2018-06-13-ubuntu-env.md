@@ -85,23 +85,11 @@ switchomega:
 	
 ## java、maven、mysql、tomcat
 
-## redis
-	
-	wget http://download.redis.io/releases/redis-4.0.9.tar.gz
-	tar -zxvf redis-4.0.9.tar.gz
-	cd redis-4.0.9
-	sudo make clean
-	sudo make install
 
-## lua
- 
-	wget http://www.lua.org/ftp/lua-5.3.4.tar.gz
-	tar -zxvf lua-5.3.4.tar.gz
-	cd lua-5.3.4
-	sudo make clean
-	sudo make linux
-	sudo make install
- 
+## redis、lua、nginx
+
+	使用[脚本](https://github.com/wenruo95/tools/blob/master/shell/installredis-nginx.sh)安装
+	更多[脚本](https://github.com/wenruo95/tools)查看
 
 
 ## 安转ssh服务
@@ -127,12 +115,10 @@ switchomega:
 	在配置文件/etc/rc.local文件exit 0前加入下面一行
 	/etc/init.d/ssh start
 
-## nginx
-	
-	http://www.runoob.com/linux/nginx-install-setup.html
-	
 ## 无法安装谷歌浏览器插件
 
+	开启开发者模式
 	./google/chrome/chrome --enable-easy-off-store-extension-install
+	然后拖入插件即可
 	
 	
