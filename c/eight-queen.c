@@ -195,7 +195,6 @@ int eight_queen(int pos_x,int pos_y,int pos[]) {
 	return count;
 }
 
-// 有些许bug 跑起来会死循环
 int main(void) {
 	int pos[QUEENS];
 	init_queen(pos,0);

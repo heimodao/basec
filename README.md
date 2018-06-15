@@ -90,6 +90,7 @@
 - [x] [费波那契数列](https://github.com/wenruo95/algorithm/blob/master/lua/fibonacci.lua)
 - [x] [各类hash算法整理](https://github.com/wenruo95/algorithm/blob/master/c/hash.c) [Test](https://github.com/wenruo95/algorithm/blob/master/c/hashtest.c)
 - [x] [八皇后问题](https://github.com/wenruo95/algorithm/blob/master/c/eight-queen.lua):有点问题后续需要修改
+- [x] [全排列、部分排列](https://github.com/wenruo95/algorithm/blob/master/c/permutation.c)
 
 
 ## 海量数据处理方式
