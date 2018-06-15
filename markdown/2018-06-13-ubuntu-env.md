@@ -85,7 +85,26 @@ switchomega:
 	
 ## java、maven、mysql、tomcat
 
+	/etc/profile
+	export JAVA_HOME=/usr/share/jdk1.6.0_14 
+	export PATH=$JAVA_HOME/bin:$PATH 
+	export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar 
+	java
+	javac 
+	java -version
+	
+	export M2_HOME=/opt/maven
+	export M2=$M2_HOME/bin
+	export PATH=$M2:$PATH
+	mvn -version
 
+	sudo apt-get install mysql-server
+	
+	
+## VitualBox
+	
+	
+	
 ## redis、lua、nginx
 
 	使用[脚本](https://github.com/wenruo95/tools/blob/master/shell/installredis-nginx.sh)安装
