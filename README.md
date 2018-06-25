@@ -4,12 +4,8 @@
 
 > [博客](https://blog.linkzw.com) 
 
-> [资源整理](source.md)
 
-> [讨论区](https://github.com/wenruo95/algorithm/issues/1)
-
-
-# 基础结构
+# [基础结构](https://github.com/wenruo95/algorithm/blob/master/ds)
 
 ## 链表、栈、队列
 	

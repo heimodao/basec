@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "中山华理计算机在职研究生比较"
-categories: 求知路
+categories: 研究生
 tags: 中山 华理
 author: linkzw
 ---

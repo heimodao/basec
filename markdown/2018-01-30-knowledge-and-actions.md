@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "王阳明-知行合一"
-categories: 求知路
+categories: 读书笔记
 tags: demo
 author: linkzw
 ---

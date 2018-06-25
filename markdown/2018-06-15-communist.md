@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "共产党宣言摘抄"
-categories: 求知
+categories: 读书笔记
 tags: 共产党宣言
 author: linkzw
 ---
