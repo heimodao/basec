@@ -1,6 +1,11 @@
 # algorithm
 
-> 学习过程中的算法知识总结
+> 基础[数据结构](https://github.com/wenruo95/algorithm/blob/master/ds)以及[基础算法](https://github.com/wenruo95/algorithm/blob/master/c)的实现(使用C实现)
+
+> 通过撸代码学习[C++](https://github.com/algorithm/blob/master/c++)、[python](https://github.com/wenruo95/algorithm/blob/master/python)、[java](https://github.com/wenruo95/algorithm/blob/master/java)
+
+> [C++、python代码风格](http://zh-google-styleguide.readthedocs.io/en/latest/)
+
 
 > [博客](https://blog.linkzw.com) 
 
