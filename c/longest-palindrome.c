@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+// 1.C B A B C
+// 2.C B B C
 int longest_palindrome(char *str) {
 	int i,len,max = 1;
 	for (len = 0; *(str + len) != '\0'; len++);
