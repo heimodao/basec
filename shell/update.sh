@@ -10,6 +10,9 @@ cd ~/Git/wenruo95.github.io/ && git pull
 # socket-server
 cd ~/Git/socket-server/ && git pull
 
+# clogger
+cd ~/Git/clogger/ && git pull
+
 # tools
 cd ~/Git/tools/ && git pull
 
@@ -21,8 +24,12 @@ sudo sh ~/linkzw.com/algorithm/shell/copy-svn-socket.sh
 
 sudo cp -r ~/linkzw.com/tools/ ~/Git/
 
+sudo cp -r ~/linkzw.com/clogger/ ~/Git/
+
 cd ~/Git/algorithm/ && git status
 
 cd ~/Git/wenruo95.github.io/ && git status
 
 cd ~/Git/socket-server/ && git status
+
+cd ~/Git/clogger/ && git status
