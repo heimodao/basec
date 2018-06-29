@@ -25,6 +25,8 @@ int dlink_lpush(DLink *dlink,int val);
 int dlink_rpush(DLink *dlink,int val);
 
 // get
+int dlink_getpos(DLink *dlink,int pos);
+
 int dlink_getleft(DLink *dlink);
 
 int dlink_getright(DLink *dlink);
@@ -33,6 +35,8 @@ int dlink_getright(DLink *dlink);
 int dlink_isfind(DLink *dlink,int val);
 
 // pop
+int dlink_valpop(DLink *dlink,int val);
+
 int dlink_lpop(DLink *dlink);
 
 int dlink_rpop(DLink *dlink);

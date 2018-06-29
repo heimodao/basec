@@ -30,6 +30,13 @@ int main(void) {
 	dlink_print(dlink);
 
 	// get
+	printf("getpos:%d=>%d\n",1,dlink_getpos(dlink,1));
+	printf("getpos:%d=>%d\n",dlink->size,dlink_getpos(dlink,dlink->size));
+	printf("getpos:%d=>%d\n",2,dlink_getpos(dlink,2));
+	printf("getpos:%d=>%d\n",5,dlink_getpos(dlink,5));
+	printf("getpos:%d=>%d\n",6,dlink_getpos(dlink,6));
+	printf("getpos:%d=>%d\n",7,dlink_getpos(dlink,7));
+
 	printf("getleft:%d\n",dlink_getleft(dlink));
 	printf("gettight:%d\n",dlink_getright(dlink));
 
@@ -40,6 +47,7 @@ int main(void) {
 	printf("find->%d:%d\n",temp3,dlink_isfind(dlink,temp3));
 
 	// pop
+	printf("valpop:%d=>%d\n",13,dlink_valpop(dlink,13));
 	printf("lpop:%d\n",dlink_lpop(dlink));
 	printf("rpop:%d\n",dlink_rpop(dlink));
 

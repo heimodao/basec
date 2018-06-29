@@ -53,6 +53,22 @@ int dlink_rpush(DLink *dlink,int val) {
 	return 1;
 }
 
+int dlink_getpos(DLink *dlink,int pos) {
+	if (dlink->size == 0) {
+		return -1;
+	}
+	if (dlink->size < pos) {
+		return dlink->head->val;
+	}
+	int count = 1;
+	Node *node = dlink->head;
+	while (node->next != NULL && count++ < pos) {
+		node = node->next;
+	}
+	return node->val;
+}
+
+
 int dlink_getleft(DLink *dlink) {
 	if (dlink->head == NULL) {
 		return -1;
@@ -65,6 +81,32 @@ int dlink_getright(DLink *dlink) {
 		return -1;
 	}
 	return dlink->tail->val;
+}
+
+int dlink_valpop(DLink *dlink,int val) {
+	Node *node = dlink->head;
+	while (node != NULL) {
+		if (node->val == val) {
+			break;
+		}
+		node = node->next;
+	}
+	if (node == NULL) {
+		return 0;
+	}
+	if (node == dlink->head) {
+		dlink->head = node->next;
+		dlink->head->prev = NULL;
+	} else if (node == dlink->tail) {
+		dlink->tail = node->prev;
+		dlink->tail->next = NULL;
+	} else {
+		node->prev->next = node->next;
+		node->next->prev = node->prev;
+	}
+	free(node);
+	node = NULL;
+	return 1;
 }
 
 int dlink_lpop(DLink *dlink) {
