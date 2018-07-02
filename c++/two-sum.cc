@@ -22,6 +22,7 @@ public:
 		}
 		return {0,0};
 		*/
+		/*
 		for (int i = 0; i != nums.size(); i++) {
 			for (int j = i + 1; j != nums.size(); j++) {
 				if (target == nums[i] + nums[j]) {
@@ -30,17 +31,18 @@ public:
 			}
 		}
 		return {0,0};
-		/*
+		*/
 		map<int,int> m;
-		for (int i = 0; j != nums.size() i++) {
-			if (map[target - nums[i]] == NULL) {
-				map[nums[i]] = i;
+		int temp;
+		for (int i = 0; i != nums.size(); i++) {
+			temp = target - nums[i];
+			if (m.find(temp) == m.end()) {
+				m[nums[i]] = i;
 			} else {
-				return {map[target - nums[i]],i};
+				return {m[temp],i};
 			}
 		}
 		return {0,0};
-		*/
 	}
 };
 
