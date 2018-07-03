@@ -16,7 +16,7 @@ DLink* dlink_init(char *name) {
 	return dlink;
 }
 
-int dlink_lpush(DLink *dlink,int val) {
+val_type dlink_lpush(DLink *dlink,val_type val) {
 	Node *node = (Node *) malloc(sizeof(Node));
 	if (node == NULL) {
 		printf("failed to allowcate node memory:%s\n",dlink->name);
@@ -35,7 +35,7 @@ int dlink_lpush(DLink *dlink,int val) {
 	return 1;
 }
 
-int dlink_rpush(DLink *dlink,int val) {
+val_type dlink_rpush(DLink *dlink,val_type val) {
 	if (dlink->size < 1) {
 		return dlink_lpush(dlink,val);
 	}
@@ -53,7 +53,7 @@ int dlink_rpush(DLink *dlink,int val) {
 	return 1;
 }
 
-int dlink_getpos(DLink *dlink,int pos) {
+val_type dlink_getpos(DLink *dlink,val_type pos) {
 	if (dlink->size == 0) {
 		return -1;
 	}
@@ -69,21 +69,21 @@ int dlink_getpos(DLink *dlink,int pos) {
 }
 
 
-int dlink_getleft(DLink *dlink) {
+val_type dlink_getleft(DLink *dlink) {
 	if (dlink->head == NULL) {
 		return -1;
 	}
 	return dlink->head->val;
 }
 
-int dlink_getright(DLink *dlink) {
+val_type dlink_getright(DLink *dlink) {
 	if (dlink->tail == NULL) {
 		return -1;
 	}
 	return dlink->tail->val;
 }
 
-int dlink_valpop(DLink *dlink,int val) {
+val_type dlink_valpop(DLink *dlink,val_type val) {
 	Node *node = dlink->head;
 	while (node != NULL) {
 		if (node->val == val) {
@@ -109,12 +109,12 @@ int dlink_valpop(DLink *dlink,int val) {
 	return 1;
 }
 
-int dlink_lpop(DLink *dlink) {
+val_type dlink_lpop(DLink *dlink) {
 	if (dlink->head == NULL) {
 		return 0;
 	}
 	Node *node = dlink->head;
-	int val = node->val;
+	val_type val = node->val;
 	dlink->head = node->next;
 	if (dlink->head != NULL) {
 		dlink->head->prev = NULL;
@@ -124,12 +124,12 @@ int dlink_lpop(DLink *dlink) {
 	return val;
 }
 
-int dlink_rpop(DLink *dlink) {
+val_type dlink_rpop(DLink *dlink) {
 	if (dlink->tail == NULL) {
 		return 0;
 	}
 	Node *node = dlink->tail;
-	int val = node->val;
+	val_type val = node->val;
 	dlink->tail = node->prev;
 	if (dlink->tail != NULL) {
 		dlink->tail->next = NULL;
@@ -159,7 +159,7 @@ void dlink_reverse(DLink *dlink) {
 	dlink->tail = node;
 }
 
-int dlink_isfind(DLink *dlink,int val) {
+int dlink_isfind(DLink *dlink,val_type val) {
 	Node *node = dlink->head;
 	while (node != NULL) {
 		if (node->val == val) {

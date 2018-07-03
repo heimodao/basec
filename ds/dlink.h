@@ -4,15 +4,16 @@
 
 #define DLINK_H
 
+typedef int val_type;
 
 typedef struct Node {
-	int val;
+	val_type val;
 	struct Node *prev,*next;
 } Node;
 
 typedef struct DLink {
 	char *name;
-	int size;
+	unsigned long size;
 	struct Node *head,*tail;
 } DLink;
 
@@ -20,29 +21,32 @@ typedef struct DLink {
 DLink* dlink_init(char *name);
 
 // push
-int dlink_lpush(DLink *dlink,int val);
+val_type dlink_lpush(DLink *dlink,val_type val);
 
-int dlink_rpush(DLink *dlink,int val);
+val_type dlink_rpush(DLink *dlink,val_type val);
 
 // get
-int dlink_getpos(DLink *dlink,int pos);
+val_type dlink_getpos(DLink *dlink,val_type pos);
 
-int dlink_getleft(DLink *dlink);
+val_type dlink_getleft(DLink *dlink);
 
-int dlink_getright(DLink *dlink);
+val_type dlink_getright(DLink *dlink);
 
 // find
-int dlink_isfind(DLink *dlink,int val);
+val_type dlink_isfind(DLink *dlink,val_type val);
 
 // pop
-int dlink_valpop(DLink *dlink,int val);
+val_type dlink_valpop(DLink *dlink,val_type val);
 
-int dlink_lpop(DLink *dlink);
+val_type dlink_lpop(DLink *dlink);
 
-int dlink_rpop(DLink *dlink);
+val_type dlink_rpop(DLink *dlink);
 
 // reverse
 void dlink_reverse(DLink *dlink);
+
+// prval_type
+void dlink_prval_type(DLink *dlink);
 
 // print
 void dlink_print(DLink *dlink);

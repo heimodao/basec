@@ -31,7 +31,7 @@ int main(void) {
 
 	// get
 	printf("getpos:%d=>%d\n",1,dlink_getpos(dlink,1));
-	printf("getpos:%d=>%d\n",dlink->size,dlink_getpos(dlink,dlink->size));
+	printf("getpos:%ld=>%d\n",dlink->size,dlink_getpos(dlink,dlink->size));
 	printf("getpos:%d=>%d\n",2,dlink_getpos(dlink,2));
 	printf("getpos:%d=>%d\n",5,dlink_getpos(dlink,5));
 	printf("getpos:%d=>%d\n",6,dlink_getpos(dlink,6));

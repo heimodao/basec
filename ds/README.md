@@ -1,9 +1,17 @@
+# TODO
+
+- [ ] val为固定结构
+
 # How To Use
 
 ```
 // test-dlink must import "dlink.h"
 gcc dlink.c test-dlink.c -o dlink.out
 ```
+
+dlink.c使用： 修改类型val_type and dlink_print的打印语句
+
+
 
 # 双向链表
 

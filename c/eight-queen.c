@@ -181,12 +181,12 @@ int eight_queen(int pos_x,int pos_y,int pos[]) {
 				print_pos(pos,++count);
 			}
 			if (stack->size <= 0) {
-				return;
+				return count;
 			}
 			Node *node = lpop_stack(stack);
 			init_queen(pos,node->pos_x);
-			x = node->pos_x - 1;
-			y = node->pos_y - 1;
+			x = node->pos_x;
+			y = node->pos_y;
 			free(node);
 			node = NULL;
 		}
