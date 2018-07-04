@@ -14,4 +14,5 @@ g++ stl.cc -std=c++11 -o stl.o
 # leetcode
 
 
-* 1.[two-sum](https://leetcode.com/problems/two-sum/description/)
+* 1.[Two Sum](two-sum.cc)
+* 2.[Add Two Numbers](add-two-numbers.cc)
