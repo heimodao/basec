@@ -29,7 +29,7 @@ sudo cp -r ~/linkzw.com/tools/ ~/Git/
 
 sudo cp -r ~/linkzw.com/clogger/ ~/Git/
 
-sudo cp -r ~/linkzw.com/algorithm/c++/*.* ~/Git/cpp-study/
+sudo cp -r ~/linkzw.com/algorithm/c++/**.* ~/Git/cpp-study/
 
 pwd
 cd ~/Git/algorithm/ && git status
