@@ -10,4 +10,4 @@ so:
 	gcc -shared -o base64.so base64.o
 
 clean:
-	rm -rf *.out *.o *.so
+	rm -rf *.out *.o *.so *.a
