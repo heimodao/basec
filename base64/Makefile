@@ -7,7 +7,7 @@ a:
 
 so:
 	gcc -fpic base64.c test-base64.c -std=c99 -lm -o base64.o
-	gcc -shared -o base64.so base64.o
+	gcc -shared -fPIC -o base64.so base64.o
 
 clean:
 	rm -rf *.out *.o *.so *.a
