@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+#include<limits.h>
+
 #include "base64.h"
 
 static unsigned char init_char[64] = {
@@ -13,10 +15,24 @@ static unsigned int encleft[4] = {0,3,0,15};
 static unsigned int encright[4] = {0,240,0,192};
 
 
-void encrypt_base64(char org[],int len,char result[]) {
+// 10亿长度的字符约为4G
+unsigned int encrypt_len(unsigned int len) {
+	len = ceil(len / 3.0);
+	unsigned int max = floor(UINT_MAX) / 4;
+	if (floor(UINT_MAX / 4.0) < len) {
+		return UINT_MAX;
+	}
+	return len * 4 + 1;
+}
+
+unsigned int decrypt_len(unsigned int len) {
+	return (len / 4) * 3;
+}
+
+void encrypt_base64(char org[], unsigned int len,char result[]) {
 	unsigned int chindex,left,right;
 	unsigned int leave_num = 0, count = 0;
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; count + 3 < UINT_MAX && i < len; i++) {
 		if (leave_num == 0) {
 			chindex = org[i] >> 2;
 		} else {
@@ -32,7 +48,7 @@ void encrypt_base64(char org[],int len,char result[]) {
 		}
 		leave_num = (8 * (i + 1)) % 6;
 	}
-	if (len % 3 != 0) {
+	if (count + 3 < UINT_MAX && len % 3 != 0) {
 		chindex = (org[len - 1] & encleft[leave_num - 1]) << (6 - leave_num);
 		result[count++] = init_char[chindex];
 		if (len % 3 == 1) {
@@ -45,7 +61,7 @@ void encrypt_base64(char org[],int len,char result[]) {
 }
 
 
-void decrypt_base64(char org[], int len, char result[]) {
+void decrypt_base64(char org[], unsigned int len, char result[]) {
 	unsigned char ch[4];
 	unsigned int additional = 2, count = 0, chindex;
 	for (int i = 0; i + 3 < len; i += 4) {

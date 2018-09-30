@@ -1,3 +1,6 @@
+all:
+	gcc base64.c test-base64.c -std=c99 -lm
+
 c:
 	gcc base64.c test-base64.c -std=c99 -lm
 
